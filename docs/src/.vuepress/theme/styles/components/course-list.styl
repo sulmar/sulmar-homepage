@@ -1,0 +1,106 @@
+@import '../palette.styl';
+
+
+.course-list
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+
+  .course-card 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgb(226 232 240);
+    border-radius: 0.5rem;
+    width: 100%; 
+    max-width: 24rem;
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s
+    background-color: white 
+    @media (min-width: 1024px)  
+      //display: flex; 
+      //max-width: 100%;
+
+    &:hover
+       box-shadow: 0 0.225rem 0.35rem #00000026, 0 0.225rem 0.6rem #00000026;
+       transform: scale3d(1.03, 1.03, 1.08) translate3d(0.1rem, -0.25rem, 20rem);
+
+    .image-box
+      overflow: hidden; 
+      flex: none; 
+      border-top-left-radius: 0.25rem;
+      border-top-right-radius: 0.25rem; 
+      height: 12rem; 
+      text-align: center; 
+      background-size: cover;
+      background-position: center;
+
+
+      @media (min-width: 1024px)  
+        border-top-left-radius: 0;
+        border-top-right-radius: 0; 
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem; 
+        //width: 12rem; 
+        //height: auto; 
+      
+      
+    .course-box
+      display: flex; 
+      padding: 1rem;
+      padding-bottom: 0.4rem; 
+      flex-direction: column; 
+      justify-content: space-between; 
+      border-bottom-right-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem; 
+      border-right-width: 1px; 
+      border-bottom-width: 1px; 
+      border-left-width: 1px; 
+      border-color: #9CA3AF; 
+      line-height: 1.5; 
+      background-color: #ffffff; 
+
+      @media (min-width: 1024px)  
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0; 
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem; 
+        border-top-width: 1px; 
+        border-left-width: 0; 
+        border-color: #9CA3AF; 
+ 
+      .course-title-and-tagline
+        margin-bottom: 1.5rem; 
+
+        .title
+          margin-bottom: 0.5rem; 
+          font-size: 1.1rem;
+          line-height: 1.75rem; 
+          font-weight: 700; 
+          color: #111827; 
+        
+        .tagline
+          font-size: 0.9rem;
+          line-height: 1.5rem;
+          margin-bottom: 0; 
+          color: #374151; 
+
+      .extra-info
+        padding-left: 0.5rem;
+        padding-right: 0.5rem; 
+        padding-bottom: 0.1rem; 
+        padding-top: 0.5rem;
+      
+        .extra-info-item
+          display: inline-block; 
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem; 
+          padding-left: 0.75rem;
+          padding-right: 0.75rem; 
+          margin-right: 0.5rem; 
+          margin-bottom: 0.5rem; 
+          border-radius: 9999px; 
+          font-size: 0.875rem;
+          line-height: 1.25rem; 
+          font-weight: 400; 
+          color: #374151; 
+          background-color: #E5E7EB 

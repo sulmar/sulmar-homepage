@@ -1,0 +1,118 @@
+@import '../palette.styl';
+
+.theme-default-content
+  .VueCarousel
+    margin-top 5rem
+
+.course-cell
+  padding 15px 10px
+  min-height 100%
+  display flex
+  box-sizing border-box
+  .cell-box
+    border 1px solid #E5E5E5
+    border-radius 8px
+    padding 2.75rem
+    position relative
+    display flex
+    flex-direction column
+    box-shadow 0 0 1px 0px rgb(0 0 0 / 6%)
+    background #fff
+    transition transform .2s, -webkit-transform .2s
+    &:hover
+      border-color #5591C5
+      cursor pointer
+    .cell-header
+      padding-right 0
+      margin-top 0
+      padding-right 0
+      position relative
+      margin-bottom 20px
+      h4
+        font-size 1.5rem
+        line-height 1.2
+        font-weight 600
+        margin 0
+      img
+        display block
+        width 80px
+        border-radius 0.5rem
+        margin-bottom 1.5rem
+        margin-left auto
+        margin-right auto
+    .cell-details
+      margin-bottom 20px
+      ul
+        display flex
+        flex-wrap wrap
+        margin 0
+        padding 0
+        li
+          display flex
+          flex-wrap wrap
+          align-items center
+          margin-right 5px
+          &:not(:first-child)
+            padding-left 5px
+            border-left 1px solid #0c0548
+        img
+          width 18px
+          margin-right 5px
+          display block
+          margin-bottom 0
+          margin-top 0
+          order 0
+          height auto
+    .cell-content
+      margin-bottom 20px
+      margin-top 0px
+      p
+        font-size 14px
+        line-height 150%
+        margin 0 0 8px
+        color #64748b
+    .person-box
+      display flex
+      flex-wrap wrap
+      margin 0
+      padding 0
+      img
+        width auto
+        margin-right 10px
+        display block
+        margin-bottom 0
+        margin-top 0
+        order 0
+        height 2.5rem
+      .person-holder
+        h3
+          font-size 1rem
+          font-weight 600
+          color #5591C5
+          text-transform uppercase
+          line-height 1.2
+          font-family "Barlow Semi Condensed", sans-serif !important
+          margin 0
+        p
+          margin 0
+          font-size 0.8rem
+          font-family "Barlow Semi Condensed", sans-serif !important
+          color #94a3b8
+    .more-info
+      margin-top auto
+      text-align right
+      margin-bottom 0
+      p
+        font-size 16px
+        font-weight 600
+        text-decoration none
+        color #5591C5
+        transition 0.3s
+        display inline-block
+        margin-bottom 0
+        margin-top 0
+        &:hover
+          transform translateX(5px)
+        img
+          display inline-block
+          vertical-align middle

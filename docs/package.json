@@ -1,0 +1,28 @@
+{
+  "name": "sulmar-homepage",
+  "version": "0.0.1",
+  "description": "vuepress project",
+  "main": "index.js",
+  "authors": {
+    "name": "jerzy",
+    "email": "jerzy.szufa@gmail.com"
+  },
+  "repository": "github.com/sulmar/sulmar-homepage.git",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-blog": "^1.9.4",
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "vee-validate": "^3.4.15",
+    "vue": "^2.7.16",
+    "vue-carousel": "^0.18.0",
+    "vue-scrollto": "^2.20.0",
+    "vue-template-compiler": "^2.7.16",
+    "vuetify": "^2.7.2"
+  }
+}
