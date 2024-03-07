@@ -45,6 +45,10 @@ module.exports = {
         link: '/#courses',
       },
       {
+        text: 'O mnie',
+        link: '/#trainer',
+      },
+      {
         text: 'Kontakt',
         link: '/#contact',
       },
