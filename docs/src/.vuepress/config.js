@@ -42,7 +42,7 @@ module.exports = {
     nav: [
       {
         text: 'Szkolenia',
-        link: '/courses/',
+        link: '/#courses',
       },
     ],
     sidebar: {
