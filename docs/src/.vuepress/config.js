@@ -44,6 +44,10 @@ module.exports = {
         text: 'Szkolenia',
         link: '/#courses',
       },
+      {
+        text: 'Kontakt',
+        link: '/#contact',
+      },
     ],
     sidebar: {
       '/szkolenia/': [

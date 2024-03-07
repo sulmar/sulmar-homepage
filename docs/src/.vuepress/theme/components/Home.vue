@@ -100,7 +100,7 @@
       <OpinionsCarousel />
     </section>
 
-    <section class="cta-section">
+    <section id="contact" class="cta-section">
 
       <v-container class="cta-content">
         <div class="cta-description">
