@@ -71,17 +71,17 @@ module.exports = {
       '@vuepress/blog', {
       directories: [
         {
-          id: 'courses',
-          dirname: 'courses',
-          path: '/courses/',
-          layout: 'IndexCourse',
-          itemLayout: 'Course',
-          itemPermalink: '/courses/:slug',/* edytować ten slug */
+          id: 'example',
+          dirname: 'example',
+          path: '/example/',
+          layout: 'example',
+          itemLayout: 'example',
+          itemPermalink: '/example/:slug',/* można odpowiednio edytować ten slug */
           pagination: {
             lengthPerPage: 100,
-            layout: 'IndexCourse', /* definiuje layout 2-strony wyświetlanych kursów, jeśli np. na danej stronie chę wyświetlić tylko x(lengthPerPage) domyślnie layout jest taki sam jak strony głównej */
-            prevText: 'Poprzednia',
-            nextText: 'Następna',
+            layout: 'example', /* definiuje layout 2-strony wyświetlanych podstron(np.postów), jeśli np. na danej stronie chę wyświetlić tylko x(lengthPerPage) domyślnie layout jest taki sam jak strony głównej */
+            prevText: 'example',
+            nextText: 'example',
           },
         }
       ]
