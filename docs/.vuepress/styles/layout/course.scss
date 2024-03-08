@@ -41,7 +41,7 @@
 		}
 
 		.hero-img-holder {
-			height: 6npm 0px;
+			height: 700px;
 			width: 100%;
 			background-image: url("/docs/.vuepress/public/images/carbon-4.png");
 			background-position: center;
@@ -54,9 +54,10 @@
 		padding-top: 6em;
 		padding-bottom: 4em;
 
-		.container {
+		.v-container {
 			max-width: 1100px;
 			margin-bottom: 5rem;
+			padding: 0;
 
 			h2 {
 				font-size: 2rem;
