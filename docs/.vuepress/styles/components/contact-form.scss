@@ -1,0 +1,11 @@
+@import '../palette.scss';
+
+form {
+	padding: 3rem;
+	background-color: $secondaryColor;
+}
+
+form .success-message,
+form .error-message {
+	padding-top: 2rem;
+}

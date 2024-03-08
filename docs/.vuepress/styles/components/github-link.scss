@@ -1,0 +1,15 @@
+@import '../palette.scss';
+
+.icon {
+	margin-left: 0.75rem;
+
+	a {
+		height: 100%;
+
+		svg {
+			width: 1.5rem;
+			height: 100%;
+			fill: $secondaryColor;
+		}
+	}
+}

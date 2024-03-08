@@ -1,0 +1,305 @@
+@import '../palette.scss';
+
+
+.course-layout {
+	.hero-course {
+		background: linear-gradient(to top, #1e3c72 0%, #2a5298 100%);
+		background-size: cover;
+		background-position: center;
+		height: 80vh;
+		box-sizing: border-box;
+		padding-bottom: 5rem;
+		position: relative;
+		display: flex;
+		align-content: center;
+		align-items: center;
+
+		.hero-course-content {
+			margin-left: 9rem;
+			margin-right: auto;
+			width: 100%;
+
+			.course-desc {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				align-content: center;
+
+				h1 {
+					color: $secondaryColor;
+					font-size: 2.5rem;
+					font-weight: 600;
+				}
+
+				p {
+					color: $secondaryColor;
+					margin-top: 1.1rem;
+					font-size: 1.1rem;
+					font-weight: 400;
+				}
+			}
+		}
+
+		.hero-img-holder {
+			height: 6npm 0px;
+			width: 100%;
+			background-image: url("/docs/.vuepress/public/images/carbon-4.png");
+			background-position: center;
+			background-size: contain;
+			border-radius: 8px;
+		}
+	}
+
+	.learning-outcomes {
+		padding-top: 6em;
+		padding-bottom: 4em;
+
+		.container {
+			max-width: 1100px;
+			margin-bottom: 5rem;
+
+			h2 {
+				font-size: 2rem;
+				line-height: 1.1;
+				font-weight: 600;
+				letter-spacing: 0em;
+				margin-bottom: 1rem;
+			}
+
+			.outcomes-img-holder {
+				width: 100%;
+				height: 100%;
+
+				.outcomes-img {
+					background-image: url("/docs/.vuepress/public/images/outcomes-circle.jpg");
+					background-position: center;
+					background-size: contain;
+					height: 100%;
+					width: 100%;
+				}
+			}
+
+			.v-list-item {
+				padding: 0;
+
+				.v-list-item__title {
+					font-size: 1.125rem;
+					line-height: 1.75rem;
+					letter-spacing: -0.025em;
+					margin-left: 1rem;
+				}
+			}
+		}
+	}
+}
+
+.course-content {
+	margin-top: 10rem;
+
+	h2 {
+		border: none;
+	}
+
+	p {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+		letter-spacing: -0.025em;
+		margin-bottom: 1rem;
+	}
+}
+
+#program {
+	&>ul {
+		list-style: none;
+		font-weight: 600;
+		padding: 0;
+
+		&>li {
+			font-size: 1.2rem;
+			color: #000;
+			transition: all 0.2s ease;
+			padding: 15px 0;
+			border-bottom: 1px solid #3c3c3c;
+			position: relative;
+			cursor: pointer;
+
+			&:first-of-type {
+				border-top: 1px solid #3c3c3c;
+			}
+
+			&>ul {
+				max-height: 0;
+				overflow: hidden;
+				transition: all 0.4s ease;
+				list-style-type: disc;
+				cursor: default;
+
+				&>li {
+					margin-top: 5px;
+					padding: 7px 0;
+					max-width: 381px;
+					font-size: 1rem;
+					margin-top: 5px;
+				}
+
+				&.active {
+					max-height: 1000px;
+					margin-top: 15px;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+
+section {
+	&.trainer {
+		background: linear-gradient(to top, #000 0%, #08243b 100%);
+		padding-top: 4em;
+		padding-bottom: 4em;
+		color: $secondaryColor;
+
+		.trainer-content {
+			text-align: left;
+			margin-top: 4rem;
+			margin-bottom: 5rem;
+
+			.trainer-img-holder {
+				width: 100%;
+				height: 250px;
+
+				.trainer-img {
+					background-image: url("/docs/.vuepress/public/images/in_action.jpg");
+					background-position: center;
+					background-size: contain;
+					height: 100%;
+					width: 100%;
+					border-radius: 8px;
+				}
+			}
+
+			p {
+				&.short {
+					color: $accentColor;
+					text-transform: uppercase;
+					font-size: 0.95rem;
+					margin-bottom: 0.6rem;
+				}
+			}
+
+			h2 {
+				color: $secondaryColor;
+				border: none;
+				margin-bottom: 1.5rem;
+			}
+
+			.trainer-description {
+				p {
+					color: $secondaryColor;
+				}
+			}
+		}
+
+		.counters-container {
+			display: flex;
+			justify-content: space-around;
+			max-width: 1200px;
+			margin: 0 auto;
+
+			.counter {
+				text-align: center;
+				width: 200px;
+				padding: 20px;
+				background: linear-gradient(to top, #051624 0%, #08243b 100%);
+				border-radius: 8px;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+				transition: transform 0.3s ease;
+			}
+
+			h2 {
+				font-size: 4.5rem;
+				color: $accentColor;
+				border: none;
+				font-family: "Barlow Semi Condensed", sans-serif;
+				font-weight: 300;
+				margin: 0;
+			}
+
+			p {
+				font-size: 1.2rem;
+				color: #d9d9d9;
+				font-family: "Barlow Semi Condensed", sans-serif;
+				font-weight: 500;
+			}
+		}
+	}
+
+	&.cta-section {
+		padding-top: 10rem;
+		padding-bottom: 7rem;
+
+		.cta-content {
+			text-align: center;
+
+			.cta-description {
+				margin-bottom: 2rem;
+
+				h2 {
+					border: none;
+					margin-bottom: 3rem;
+					font-size: 2rem;
+					line-height: 1.1;
+					font-weight: 600;
+				}
+
+				p {
+					font-size: 1.125rem;
+					line-height: 1.75rem;
+					letter-spacing: -0.025em;
+					max-width: 700px;
+					margin: auto;
+				}
+			}
+		}
+
+		.contact-items-container {
+			max-width: 700px;
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 2rem;
+
+			.contact-item {
+				text-align: center;
+				padding: 20px;
+				flex: 1;
+
+				img {
+					width: 90px;
+				}
+
+				p {
+					font-size: 0.8rem;
+					font-family: "Barlow Semi Condensed", sans-serif;
+				}
+			}
+		}
+
+		.form-holder {
+			margin: -1px;
+		}
+
+		.form-img {
+			background-image: url("/docs/.vuepress/public/images/cta.jpg");
+			background-position: center;
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			border: none;
+		}
+	}
+
+	&.suggested-courses {
+		background-color: $secondaryColor;
+		padding-top: 5rem;
+	}
+}
