@@ -1,5 +1,6 @@
 ---
 layout: Course
+title: Hello Master
 ---
 
 # Get Started
