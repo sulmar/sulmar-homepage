@@ -1,4 +1,5 @@
 <template>
+    <Navbar />
     <div class="course-layout">
         <h1>{{ frontmatter.title }}</h1>
 
@@ -70,6 +71,7 @@
 
 <script setup>
 import { usePageFrontmatter } from '@vuepress/client'
+import Navbar from '@theme/Navbar.vue'
 
 // Używając `usePageFrontmatter`, możemy uzyskać dostęp do danych frontmatter aktualnej strony
 const frontmatter = usePageFrontmatter()
