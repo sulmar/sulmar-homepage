@@ -3,49 +3,69 @@ layout: Course
 title: Hello Master
 ---
 
-# Get Started
 
-This is a normal page, which contains VuePress basics.
-
-## Pages
-
-You can add markdown files in your vuepress directory, every markdown file will be converted to a page in your site.
-
-See [routing][] for more details.
-
-## Content
-
-Every markdown file [will be rendered to HTML, then converted to a Vue SFC][content].
-
-VuePress support basic markdown syntax and [some extensions][synatex-extensions], you can also [use Vue features][vue-feature] in it.
-
-## Configuration
-
-VuePress use a `.vuepress/config.js`(or .ts) file as [site configuration][config], you can use it to config your site.
-
-For [client side configuration][client-config], you can create `.vuepress/client.js`(or .ts).
-
-Meanwhile, you can also add configuration per page with [frontmatter][].
-
-## Layouts and customization
-
-Here are common configuration controlling layout of `@vuepress/theme-default`:
-
-- [navbar][]
-- [sidebar][]
-
-Check [default theme docs][default-theme] for full reference.
-
-You can [add extra style][style] with `.vuepress/styles/index.scss` file.
-
-[routing]: https://vuejs.press/guide/page.html#routing
-[content]: https://vuejs.press/guide/page.html#content
-[synatex-extensions]: https://vuejs.press/guide/markdown.html#syntax-extensions
-[vue-feature]: https://vuejs.press/guide/markdown.html#using-vue-in-markdown
-[config]: https://vuejs.press/guide/configuration.html#client-config-file
-[client-config]: https://vuejs.press/guide/configuration.html#client-config-file
-[frontmatter]: https://vuejs.press/guide/page.html#frontmatter
-[navbar]: https://vuejs.press/reference/default-theme/config.html#navbar
-[sidebar]: https://vuejs.press/reference/default-theme/config.html#sidebar
-[default-theme]: https://vuejs.press/reference/default-theme/
-[style]: https://vuejs.press/reference/default-theme/styles.html#style-file
+* Wprowadzenie do Blazor
+	* Porównanie Blazor Server Side i Blazor WebAssembly
+	* Utworzenie aplikacji
+ 	* Struktura projektu
+* Strony (Pages)
+ 	* Utworzenie strony
+ 	* Osadzanie kodu w C#
+	* Podział prezentacji i kodu C# (partial class)
+* Układy (Layouts)
+	* Utworzenie własnego układu
+	* Nadpisywanie układu
+ 	* Zagnieżdżanie układów
+	* Dziedziczenie układów
+* Komponenty 
+	* Utworzenie własnego komponentu
+	* Przekazywanie parametrów
+	* Zastosowanie parametrów kaskadowych
+	* Generowanie fragmentów
+	* Wiązanie danych (Binding)
+	* Zdarzenia (EventCallback)
+* Routing i nawigacja
+	* Definiowanie tras
+	* Przekazywanie parametrów tras
+	* Ograniczenia tras
+	* Przekazywanie parametrów zapytań
+	* Nawigacja pomiędzy stronami
+* Formularze
+	* Tworzenie formularzy
+	* Sprawdzanie poprawności danych
+	* Wysyłanie danych
+	* Wysyłanie plików
+* Wstrzykiwanie zależności
+	* Wstrzykiwanie na stronie 
+	* Wstrzykiwanie w klasach częściowych  
+* Komunikacja z REST API
+	* Utworzenie usługi Minimal Api
+	* Utworzenie nazwanego klienta HTTP
+	* Wysyłanie żądań i pobieranie danych
+* Konfiguracja aplikacji
+	* Pobieranie konfiguracji z pliku
+	* Konfiguracja zależna od środowiska
+* Dostosowanie wyglądu aplikacji
+	* Zastosowanie styli kaskadowych CSS
+	* Izolacja arkuszy styli kaskadowych CSS
+* Integracja z JavaScript
+	* Wywołanie funkcji JavaScript z Blazor
+	* Wywołanie funkcji Blazor z JavaScript
+	* Izolacja skryptów JavaScript
+* Zarządzanie stanem aplikacji
+	* Zachowanie danych w Local Storage
+	* Zachowanie danych w Session Storage
+* Aplikacje czasu rzeczywistego
+	* Utworzenie Huba Signal-R
+	* Wysyłanie wiadomości
+	* Odbieranie wiadomości w Blazor
+* Optymalizacja aplikacji
+	* Wirtualizacja komponentów
+	* Opóźnione ładowanie modułów
+* Bezpieczeństwo
+	* Uwierzytelnianie
+	* Tokeny JWT
+	* Autoryzacja oparta o role
+ 	* Autoryzacja oparta o poświadczenia
+ 	* Ukrywanie stron na podstawie autoryzacji
+ 	* Ukrywanie fragmentów widoków na podstawie autoryzacji

@@ -62,16 +62,70 @@
             <v-container class="course-content">
                 <h2>Program szkolenia</h2>
                 <p>3 Dni . 15 Sekcji . 45 Tematów </p>
-                <!-- <Content slot-key="curriculum" id="program" /> -->
+                <Content id="program" />
             </v-container>
 
         </section>
+
+        <section class="trainer">
+            <v-container class="trainer-content">
+
+                <v-row>
+                    <v-col>
+                        <div class="trainer-img-holder">
+                            <div class="trainer-img">
+                            </div>
+                        </div>
+                    </v-col>
+
+                    <v-col>
+                        <p class="short">Prowadzący</p>
+                        <h2>Marcin Sulecki</h2>
+                        <div class="trainer-description">
+                            <p>Wykształcenie: mgr informatyki Absolwent Uniwersytet A. Mickiewicza w Poznaniu, Wydział
+                                Matematyki i
+                                Informatyki Doświadczenie: 20+ lat Rozwiązania m.in. dla logistyki, monitoringu pojazdów
+                                z użyciem .NET i
+                                Crystal Reports. Tworzę rozwiązania dla swoich klientów a zdobytym doświadczeniem dzielę
+                                się na
+                                szkoleniach.
+                            </p>
+                        </div>
+                    </v-col>
+                </v-row>
+
+            </v-container>
+            <v-container class="counters-container">
+                <div class="counter">
+                    <h2>25+</h2>
+                    <p>Lat doświadczenia</p>
+                </div>
+                <div class="counter">
+                    <h2>300</h2>
+                    <p>Przeprowadzonych szkoleń</p>
+                </div>
+                <div class="counter">
+                    <h2>1000+</h2>
+                    <p>Uczestników</p>
+                </div>
+                <div class="counter">
+                    <h2>100</h2>
+                    <p>Godzin konsultacji</p>
+                </div>
+            </v-container>
+
+        </section>
+
+
+
     </div>
 </template>
 
 <script setup>
 import { usePageFrontmatter } from '@vuepress/client'
 import Navbar from '@theme/Navbar.vue'
+import { onMounted } from 'vue';
+import { ref } from 'vue';
 
 // Używając `usePageFrontmatter`, możemy uzyskać dostęp do danych frontmatter aktualnej strony
 const frontmatter = usePageFrontmatter()
@@ -81,15 +135,36 @@ watchEffect(() => {
     console.log(frontmatter.value.title); // Teraz to będzie reagować na zmiany
 });
 
-import { ref } from 'vue';
+
 
 const outcomes = ref([
-  { title: 'Confidently build front-end apps with React and TypeScript' },
-  { title: 'Build reusable function components' },
-  { title: 'Style your components using vanilla CSS, CSS modules, and CSS-in-JS' },
-  { title: 'Use VSCode shortcuts to increase your productivity' },
-  { title: 'Deploy your React apps' },
-  { title: 'Write clean code like a pro' },
+    { title: 'Confidently build front-end apps with React and TypeScript' },
+    { title: 'Build reusable function components' },
+    { title: 'Style your components using vanilla CSS, CSS modules, and CSS-in-JS' },
+    { title: 'Use VSCode shortcuts to increase your productivity' },
+    { title: 'Deploy your React apps' },
+    { title: 'Write clean code like a pro' },
 ]);
+
+
+
+onMounted(() => {
+    const programElement = document.getElementById("program");
+    const programList = programElement.children[0];
+    const headers = programList.children;
+
+
+    for (let i = 0; i < headers.length; i++) {
+        headers[i].addEventListener("click", function () {
+            let content = this.children[0];
+
+            content.classList.toggle("active");
+            content.addEventListener("click", function (event) {
+                event.stopPropagation(); // Zatrzymuje propagację kliknięcia w rozwijanej liście
+            });
+
+        });
+    }
+})
 
 </script>
