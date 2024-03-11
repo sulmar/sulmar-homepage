@@ -56,6 +56,7 @@ export default defineUserConfig({
       components: {
         MyHomeFooter: path.resolve(__dirname, './components/MyHomeFooter.vue'),
         //Navbar: path.resolve(__dirname, './components/Navbar.vue'),
+        ContactForm: path.resolve(__dirname, './components/ContactForm.vue'),
       }
     }),
   ],

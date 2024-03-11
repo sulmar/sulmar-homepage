@@ -116,6 +116,43 @@
 
         </section>
 
+        <section class="cta-section">
+
+            <v-container class="cta-content">
+                <div class="cta-description">
+                    <h2>Chcesz skorzystać z oferty?</h2>
+                    <p>Napisz do nas, aby omówić szkolenie dla Twojej firmy. Daj nam znać, czego potrzebuje Twój zespół
+                        i w jaki sposób możemy Ci pomóc w osiągnięciu celów.</p>
+                </div>
+
+                <v-container class="contact-items-container">
+                    <!-- ICONS CREATED WITH https://www.svgrepo.com/svg/513450/location-pin?edit=true -->
+                    <div class="contact-item">
+                        <img src="icons/skype.svg" alt="Location Icon">
+                        <p>Skype</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="icons/email.svg" alt="Email Icon">
+                        <p>info@twojastrona.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="icons/phone.svg" alt="Phone Icon">
+                        <p>+48 123 456 789</p>
+                    </div>
+                </v-container>
+
+                <v-row no-gutters class="form-holder">
+                    <v-col cols="12" sm="8">
+                        <ContactForm />
+                    </v-col>
+                    <v-col cols="12" sm="4">
+                        <div class="form-img">
+                        </div>
+                    </v-col>
+                </v-row>
+
+            </v-container>
+        </section>
 
 
     </div>
