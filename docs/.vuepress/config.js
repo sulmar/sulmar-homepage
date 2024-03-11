@@ -37,7 +37,7 @@ export default defineUserConfig({
    /*  alias: {
       '@theme/HomeFooter.vue': path.resolve(
         __dirname,
-        './components/MyHomeFooter.vue',
+        './components/Footer.vue',
       ),
     }, */
   }),
@@ -54,7 +54,7 @@ export default defineUserConfig({
     }),
     registerComponentsPlugin({
       components: {
-        MyHomeFooter: path.resolve(__dirname, './components/MyHomeFooter.vue'),
+        Footer: path.resolve(__dirname, './components/Footer.vue'),
         //Navbar: path.resolve(__dirname, './components/Navbar.vue'),
         ContactForm: path.resolve(__dirname, './components/ContactForm.vue'),
       }

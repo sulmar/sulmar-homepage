@@ -154,6 +154,7 @@
             </v-container>
         </section>
 
+        <Footer />
 
     </div>
 </template>
