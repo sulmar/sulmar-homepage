@@ -3,7 +3,7 @@ import { defineUserConfig } from 'vuepress/cli'
 import { webpackBundler } from '@vuepress/bundler-webpack'
 import { searchPlugin } from '@vuepress/plugin-search'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
-import { getDirname, path } from 'vuepress/utils'
+import { getDirname, path, fs } from 'vuepress/utils'
 
 const __dirname = getDirname(import.meta.url)
 
@@ -34,12 +34,12 @@ export default defineUserConfig({
         link: 'https://github.com/sulmar',
       }
     ],
-   /*  alias: {
-      '@theme/HomeFooter.vue': path.resolve(
-        __dirname,
-        './components/Footer.vue',
-      ),
-    }, */
+    /*  alias: {
+       '@theme/HomeFooter.vue': path.resolve(
+         __dirname,
+         './components/Footer.vue',
+       ),
+     }, */
   }),
 
   head: [
@@ -57,8 +57,44 @@ export default defineUserConfig({
         Footer: path.resolve(__dirname, './components/Footer.vue'),
         //Navbar: path.resolve(__dirname, './components/Navbar.vue'),
         ContactForm: path.resolve(__dirname, './components/ContactForm.vue'),
+        CoursesList: path.resolve(__dirname, './components/CoursesList.vue'),
+        /* Experiment: path.resolve(__dirname, './components/Experiment.vue'), */
       }
     }),
+    /* {
+      name: 'load-global-data',
+      async onGenerated(app) {
+        
+        const globalData = app.pages.map(page => ({
+          path: page.path,
+          frontmatter: page.frontmatter,
+        }));
+        console.log(globalData)
+
+        const dataPath = path.resolve(app.dir.public(), 'globalData.json');
+        fs.writeFileSync(dataPath, JSON.stringify(globalData));
+      },
+    }, */
+
+    { 
+      //CODE HERE - użyć właściwości pages --> https://v2.vuepress.vuejs.org/reference/node-api.html#pages
+      name: 'pages-modifier-plugin',
+      onInitialized: async (app) => {
+        // Dostęp do właściwości pages
+        const pages = app.pages;
+
+        // Przykład iteracji po wszystkich stronach
+        pages.forEach(page => {
+          console.log(page.path); // Wyświetlanie ścieżki każdej strony
+
+          // Możesz modyfikować strony tutaj, na przykład dodając własne metadane
+          page.frontmatter.customData = "This is custom data added by my plugin";
+        });
+
+        // Możesz również dodawać, modyfikować lub usuwać strony
+        // Pamiętaj jednak, że bezpośrednia modyfikacja `app.pages` może być zaawansowana i wymagać dodatkowej ostrożności
+      }
+    },
   ],
   bundler: webpackBundler(),
 })

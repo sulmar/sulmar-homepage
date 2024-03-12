@@ -15,8 +15,18 @@ const vuetify = createVuetify({
 });
 
 export default defineClientConfig({
-    enhance({ app }) {
+    async enhance({ app }) {
         app.use(vuetify);
+     /*    try {
+            const response = await fetch('/globalData.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const globalData = await response.json();
+            app.provide('globalData', globalData);
+        } catch (e) {
+            console.error("Problem z ładowaniem globalData.json:", e);
+        } */
     },
     layouts: {
         Course,

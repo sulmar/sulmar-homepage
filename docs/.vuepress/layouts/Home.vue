@@ -17,6 +17,8 @@
             <v-btn rounded x-large outlined @click="scrollToSection" class="hero-btn">Zamów szkolenie</v-btn>
         </section>
 
+      <!--   <Experiment/> -->
+
         <section id="courses" class="courses">
 
             <v-container class="container">
@@ -29,7 +31,7 @@
                         wiedza i doświadczenie w miłej postaci. Lorem ipsum... </p>
                 </header>
 
-                <!-- <CoursesList /> -->
+                <CoursesList />
                 <v-btn rounded x-large outlined class="link-btn" @click="toggleExpansion">
                     {{ isExpanded ? 'Mniej kursów' : 'Wszystkie kursy' }}
                 </v-btn>
@@ -41,7 +43,7 @@
 
 
 
-        <section class="trainer">
+        <section id="trainer" class="trainer">
             <v-container class="trainer-content">
 
                 <v-row>
@@ -105,7 +107,7 @@
             <!-- <OpinionsCarousel /> -->
         </section>
 
-        <section class="cta-section">
+        <section id="contact" class="cta-section">
 
             <v-container class="cta-content">
                 <div class="cta-description">
