@@ -1,5 +1,5 @@
 ---
-layout: course
+layout: Course
 title: Uczenie maszynowe z ML.NET
 slug: mlnet
 image: images/course-tiles/mlnet.jpg
@@ -11,7 +11,7 @@ tags:
   - machine-learning
 ---
 
-::: slot curriculum
+
 * Podstawy uczenia maszynowego
 	* Czym jest uczenie maszynowe?
 	* Uczenie nadzorowane
@@ -41,6 +41,5 @@ tags:
 	* Analiza obrazów
 * Integracja
 	* Utworzenie usługi REST API z wykorzystaniem ML.NET
-:::
 
 

@@ -128,7 +128,7 @@
                 <v-container class="contact-items-container">
                     <!-- ICONS CREATED WITH https://www.svgrepo.com/svg/513450/location-pin?edit=true -->
                     <div class="contact-item">
-                        <img src="icons/skype.svg" alt="Location Icon">
+                        <img src="/icons/skype.svg" alt="Location Icon">
                         <p>Skype</p>
                     </div>
                     <div class="contact-item">

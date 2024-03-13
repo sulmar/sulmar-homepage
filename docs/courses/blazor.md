@@ -14,12 +14,7 @@ tags:
  - webassembly
 ---
 
-::: slot outcomes
 
-
-:::
-
-::: slot curriculum
 * Wprowadzenie do Blazor
 	* Porównanie Blazor Server Side i Blazor WebAssembly
 	* Utworzenie aplikacji
@@ -85,4 +80,3 @@ tags:
  	* Autoryzacja oparta o poświadczenia
  	* Ukrywanie stron na podstawie autoryzacji
  	* Ukrywanie fragmentów widoków na podstawie autoryzacji
-:::

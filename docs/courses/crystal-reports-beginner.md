@@ -12,7 +12,7 @@ tags:
   - crystal-reports
 ---
 
-::: slot curriculum
+
 * Podstawy
 	* Zasada działania
 	* Tryb podglądu i projektu
@@ -58,5 +58,4 @@ tags:
 * Tabele krzyżowe (cross-tab)
 	* Zastosowanie tabeli krzyżowej
 	* Formatowanie tabeli krzyżowej
-:::
 

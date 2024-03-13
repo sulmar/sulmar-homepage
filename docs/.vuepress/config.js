@@ -55,9 +55,9 @@ export default defineUserConfig({
     registerComponentsPlugin({
       components: {
         Footer: path.resolve(__dirname, './components/Footer.vue'),
-        //Navbar: path.resolve(__dirname, './components/Navbar.vue'),
         ContactForm: path.resolve(__dirname, './components/ContactForm.vue'),
         CoursesList: path.resolve(__dirname, './components/CoursesList.vue'),
+        OpinionsCarousel: path.resolve(__dirname, './components/OpinionsCarousel.vue'),
       }
     }),
     {

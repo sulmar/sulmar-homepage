@@ -13,7 +13,6 @@ tags:
   - design-patterns
 ---
 
-::: slot curriculum
 * Wzorce kreacyjne
 	* Singleton
 	* Fabryka abstrakcyjna (Abstract Factory)
@@ -41,6 +40,5 @@ tags:
 	* Pusty obiekt (Null Object)
 	* Obserwator (Observer)
 	* Wizytator (Visitor)
-:::
 
 

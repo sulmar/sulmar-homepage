@@ -1,5 +1,5 @@
 ---
-layout: course
+layout: Course
 title: Razor Pages w ASP.NET Core 8.0
 slug: razor-pages
 image: images/course-tiles/netcore.jpg
@@ -12,7 +12,7 @@ tags:
   - razor-pages
 ---
 
-::: slot curriculum
+
 * Wprowadzenie
 	* Porównanie Razor Pages i MVC
 	* Utworzenie aplikacji
@@ -71,4 +71,3 @@ tags:
  	* Autoryzacja oparta o poświadczenia
  	* Ukrywanie stron na podstawie autoryzacji
  	* Ukrywanie fragmentów widoków na podstawie autoryzacji
-:::

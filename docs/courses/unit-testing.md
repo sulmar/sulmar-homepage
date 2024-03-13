@@ -1,5 +1,5 @@
 ---
-layout: course
+layout: Course
 title: Testy jednostkowe w C#
 slug: unit-testing
 image: images/course-tiles/csharp2.jpg
@@ -14,7 +14,7 @@ tags:
   - unit-tests
 ---
 
-::: slot curriculum
+
 * Wprowadzenie
 	* TDD	
 	* F.I.R.S.T
@@ -44,5 +44,4 @@ tags:
 * Testy integracyjne
   * Testowanie usług sieciowych REST API
   * Zastosowanie konteneryzacji
-:::
 

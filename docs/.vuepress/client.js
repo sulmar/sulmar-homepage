@@ -5,8 +5,12 @@ import { createVuetify } from 'vuetify'; // Importowanie funkcji tworzącej Vuet
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
 
-import Course from './layouts/Course.vue';
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide} from 'vue3-carousel'
+
 import Home from './layouts/Home.vue';
+import Course from './layouts/Course.vue';
+
 
 // Tworzenie instancji Vuetify
 const vuetify = createVuetify({
@@ -17,20 +21,12 @@ const vuetify = createVuetify({
 export default defineClientConfig({
     async enhance({ app }) {
         app.use(vuetify);
-     /*    try {
-            const response = await fetch('/globalData.json');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const globalData = await response.json();
-            app.provide('globalData', globalData);
-        } catch (e) {
-            console.error("Problem z ładowaniem globalData.json:", e);
-        } */
+        app.component('Carousel', Carousel);
+        app.component('Slide', Slide);
     },
     layouts: {
-        Course,
         Home,
+        Course,
     },
     // Additional client-side configurations...
 });

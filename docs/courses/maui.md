@@ -1,5 +1,5 @@
 ---
-layout: course
+layout: Course
 title: Tworzenie aplikacji mobilnych MAUI
 slug: maui
 image: images/course-tiles/dotnet.jpg
@@ -13,7 +13,7 @@ tags:
   - mvvm
 ---
 
-::: slot curriculum
+
 * Wprowadzenie do .NET MAUI 	
  	* Przygotowanie środowiska programistycznego
  	* Konfiguracja emulatora
@@ -58,4 +58,4 @@ tags:
 	* Lokalizacja aplikacji
 * Wdrażanie
 	* Publikacja aplikacji
-:::
+

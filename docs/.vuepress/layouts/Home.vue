@@ -14,7 +14,7 @@
                     </v-col>
                 </v-row>
             </div>
-            <v-btn rounded x-large outlined @click="scrollToSection" class="hero-btn">Zamów szkolenie</v-btn>
+            <v-btn rounded="xl" size="large" variant="outlined" @click="scrollToSection" class="hero-btn">Zamów szkolenie</v-btn>
         </section>
 
 
@@ -31,7 +31,7 @@
                 </header>
 
                 <CoursesList />
-                <v-btn rounded x-large outlined class="link-btn" @click="toggleExpansion">
+                <v-btn rounded="xl" size="large" variant="outlined" class="link-btn" @click="toggleExpansion">
                     {{ isExpanded ? 'Mniej kursów' : 'Wszystkie kursy' }}
                 </v-btn>
             </v-container>
@@ -103,7 +103,7 @@
                 </header>
             </v-container>
 
-            <!-- <OpinionsCarousel /> -->
+            <OpinionsCarousel />
         </section>
 
         <section id="contact" class="cta-section">
@@ -162,35 +162,26 @@
 
 <script setup>
 import Navbar from '@theme/Navbar.vue'
-/* import CoursesList from "../../components/CoursesList.vue";
-import OpinionsCarousel from "../../components/OpinionsCarousel.vue"
-import Vue from 'vue';
-import VueScrollTo from 'vue-scrollto';
- 
-Vue.use(VueScrollTo);
- 
-export default {
-  components: {
-    CoursesList,
-    OpinionsCarousel
-  },
-  data() {
-    return {
-      isExpanded: false
-    };
-  },
-  methods: {
-    scrollToSection() {
-      this.$scrollTo('#courses', 700, { easing: 'easeInOutQuad' });
-    },
-    toggleExpansion() {
-      this.isExpanded = !this.isExpanded;
-      let content = this.$el.querySelector(".home-list");
-      if (content) {
-        content.classList.toggle("expanded");
-      }   
-    }
-  },
-}
- */
+import { ref } from 'vue';
+import CoursesList from "../components/CoursesList.vue";
+import OpinionsCarousel from "../components/OpinionsCarousel.vue";
+
+// useRef dla przechowywania stanu
+const isExpanded = ref(false);
+
+// Metody przekształcone na funkcje składu
+const scrollToSection = () => {
+  const coursesSection = document.querySelector('#courses');
+  if (coursesSection) {
+    coursesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};
+
+const toggleExpansion = () => {
+  isExpanded.value = !isExpanded.value;
+  let content = document.querySelector(".home-list");
+  if (content) {
+    content.classList.toggle("expanded");
+  }
+};
 </script>

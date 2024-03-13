@@ -25,6 +25,7 @@
     "@vuepress/plugin-search": "^2.0.0-rc.18",
     "highlight.js": "^11.9.0",
     "vee-validate": "^4.5.8",
+    "vue3-carousel": "^0.3.1",
     "vuetify": "^3.5.8"
   }
 }

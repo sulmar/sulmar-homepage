@@ -1,5 +1,5 @@
 ---
-layout: course
+layout: Course
 title: Redis 7.0 dla programistów .NET
 tagline: Baza danych w pamięci? Turbodoładowanie dla twojej aplikacji.
 slug: redis
@@ -14,7 +14,7 @@ tags:
   - nosql
 ---
 
-::: slot curriculum
+
 * Wprowadzenie do Redis
 	* Zastosowania
 	* Instalacja
@@ -55,5 +55,4 @@ tags:
 * Integracja z .NET
 	* StackExchange.Redis
 	* Redis.OM
-:::
 
