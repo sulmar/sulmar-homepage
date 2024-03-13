@@ -51,6 +51,7 @@ export default defineUserConfig({
   plugins: [
     searchPlugin({
       // Plugin options https://ecosystem.vuejs.press/plugins/search.html
+      getExtraFields: (page) => page.frontmatter.tags ?? [],
     }),
     registerComponentsPlugin({
       components: {
@@ -58,6 +59,7 @@ export default defineUserConfig({
         ContactForm: path.resolve(__dirname, './components/ContactForm.vue'),
         CoursesList: path.resolve(__dirname, './components/CoursesList.vue'),
         OpinionsCarousel: path.resolve(__dirname, './components/OpinionsCarousel.vue'),
+        SimmilarCoursesList: path.resolve(__dirname, './components/SimmilarCoursesList.vue'),
       }
     }),
     {

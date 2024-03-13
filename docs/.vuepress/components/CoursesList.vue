@@ -38,14 +38,10 @@
 <script setup>
 
 import { useSiteData } from '@vuepress/client';
-import { watchEffect, onMounted, ref } from 'vue';
+import { onMounted, ref } from 'vue';
 
 const courses = ref([]);
 const siteData = useSiteData();
-
-watchEffect(() => {
-  console.log(siteData.value.frontmatterData);
-});
 
 async function loadCourses() {
   const folderPath = '/courses/';

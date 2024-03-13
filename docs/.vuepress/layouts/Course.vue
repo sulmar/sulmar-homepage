@@ -154,6 +154,11 @@
             </v-container>
         </section>
 
+        <section class="suggested-courses">
+            <SimmilarCoursesList :currentPage="$page" />
+        </section>
+
+
         <Footer />
 
     </div>
@@ -164,14 +169,13 @@ import { usePageFrontmatter } from '@vuepress/client'
 import Navbar from '@theme/Navbar.vue'
 import { onMounted } from 'vue';
 import { ref } from 'vue';
-
-// Używając `usePageFrontmatter`, możemy uzyskać dostęp do danych frontmatter aktualnej strony
-const frontmatter = usePageFrontmatter()
 import { watchEffect } from 'vue';
 
+const frontmatter = usePageFrontmatter()
 watchEffect(() => {
     console.log(frontmatter.value.title); // Teraz to będzie reagować na zmiany
 });
+
 
 
 
