@@ -17,7 +17,6 @@
             <v-btn rounded x-large outlined @click="scrollToSection" class="hero-btn">Zamów szkolenie</v-btn>
         </section>
 
-      <!--   <Experiment/> -->
 
         <section id="courses" class="courses">
 

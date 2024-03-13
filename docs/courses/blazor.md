@@ -3,7 +3,7 @@ layout: Course
 title: Tworzenie aplikacji w Blazor 8.0
 tagline: Poznaj nową technologię webową. Szybko i skutecznie.
 slug: blazor
-image: /images/course-tiles/blazor.jpg
+image: images/course-tiles/blazor.jpg
 author: Marcin Sulecki
 duration: 3
 difficulty: 2

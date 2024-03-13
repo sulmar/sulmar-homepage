@@ -3,7 +3,7 @@ layout: course
 title: Redis 7.0 dla programistów .NET
 tagline: Baza danych w pamięci? Turbodoładowanie dla twojej aplikacji.
 slug: redis
-image: /images/course-tiles/redis.png
+image: images/course-tiles/redis.png
 author: Marcin Sulecki
 duration: 3
 difficulty: 2

@@ -3,7 +3,7 @@ layout: Course
 title: Crystal Reports dla początkujących
 tagline: Efektywne i efektowane raporty. Zaskocz szefa.
 slug: crystal-reports-beginner
-image: /images/course-tiles/crystal_reports.png
+image: images/course-tiles/crystal_reports.png
 author: Marcin Sulecki
 duration: 2
 difficulty: 1

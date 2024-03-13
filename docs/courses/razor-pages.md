@@ -2,7 +2,7 @@
 layout: course
 title: Razor Pages w ASP.NET Core 8.0
 slug: razor-pages
-image: /images/course-tiles/netcore.jpg
+image: images/course-tiles/netcore.jpg
 author: Marcin Sulecki
 duration: 5
 difficulty: 2

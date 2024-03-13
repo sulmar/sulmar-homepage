@@ -88,6 +88,8 @@
 					overflow: hidden;
 					max-height: 850px;
 					transition: all 0.6s ease;
+					margin: 0 auto;
+					padding: 2rem 2.5rem;
 
 					&.expanded {
 						max-height: 1800px;

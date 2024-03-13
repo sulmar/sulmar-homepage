@@ -2,7 +2,7 @@
 layout: course
 title: Tworzenie aplikacji mobilnych MAUI
 slug: maui
-image: /images/course-tiles/dotnet.jpg
+image: images/course-tiles/dotnet.jpg
 author: Marcin Sulecki
 duration: 3
 difficulty: 2

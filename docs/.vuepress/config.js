@@ -58,41 +58,23 @@ export default defineUserConfig({
         //Navbar: path.resolve(__dirname, './components/Navbar.vue'),
         ContactForm: path.resolve(__dirname, './components/ContactForm.vue'),
         CoursesList: path.resolve(__dirname, './components/CoursesList.vue'),
-        /* Experiment: path.resolve(__dirname, './components/Experiment.vue'), */
       }
     }),
-    /* {
-      name: 'load-global-data',
-      async onGenerated(app) {
-        
-        const globalData = app.pages.map(page => ({
-          path: page.path,
-          frontmatter: page.frontmatter,
-        }));
-        console.log(globalData)
-
-        const dataPath = path.resolve(app.dir.public(), 'globalData.json');
-        fs.writeFileSync(dataPath, JSON.stringify(globalData));
-      },
-    }, */
-
-    { 
-      //CODE HERE - użyć właściwości pages --> https://v2.vuepress.vuejs.org/reference/node-api.html#pages
-      name: 'pages-modifier-plugin',
+    {
+      //Using "pages" --> https://v2.vuepress.vuejs.org/reference/node-api.html#pages
+      name: 'frontmatter-global-state',
       onInitialized: async (app) => {
         // Dostęp do właściwości pages
         const pages = app.pages;
 
-        // Przykład iteracji po wszystkich stronach
-        pages.forEach(page => {
-          console.log(page.path); // Wyświetlanie ścieżki każdej strony
+        const pagesArray = pages.map(page => {
 
-          // Możesz modyfikować strony tutaj, na przykład dodając własne metadane
-          page.frontmatter.customData = "This is custom data added by my plugin";
-        });
+          if (page.frontmatter) { return { path: page.path, frontmatter: page.frontmatter } }
+          else { return null }
 
-        // Możesz również dodawać, modyfikować lub usuwać strony
-        // Pamiętaj jednak, że bezpośrednia modyfikacja `app.pages` może być zaawansowana i wymagać dodatkowej ostrożności
+        }).filter(page => page !== null);
+
+        app.siteData.frontmatterData = pagesArray;
       }
     },
   ],

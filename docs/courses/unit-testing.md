@@ -2,7 +2,7 @@
 layout: course
 title: Testy jednostkowe w C#
 slug: unit-testing
-image: /images/course-tiles/csharp2.jpg
+image: images/course-tiles/csharp2.jpg
 author: Marcin Sulecki
 duration: "3"
 difficulty: "2"

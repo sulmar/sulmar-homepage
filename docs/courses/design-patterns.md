@@ -3,7 +3,7 @@ layout: Course
 title: Wzorce Projektowe w C#
 tagline: Poznaj przepisy na dobry kod. Wzor(c)owo.
 slug: design-patterns
-image: /images/course-tiles/csharp.jpg
+image: images/course-tiles/csharp.jpg
 author: Marcin Sulecki
 duration: 3
 difficulty: 2

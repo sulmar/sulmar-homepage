@@ -2,7 +2,7 @@
 layout: course
 title: Uczenie maszynowe z ML.NET
 slug: mlnet
-image: /images/course-tiles/mlnet.jpg
+image: images/course-tiles/mlnet.jpg
 author: Marcin Sulecki
 duration: 3
 difficulty: 2
