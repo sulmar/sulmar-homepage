@@ -1,0 +1,46 @@
+@import '../palette.scss';
+
+.navbar-items .navbar-item:last-child {
+	height: 100%;
+
+	.external-link {
+		height: 100%;
+		width: 1.5rem;
+		fill: $secondaryColor;
+		background-image: url("/docs/.vuepress/public/icons/github-mark.svg");
+		background-size: contain;
+		background-position: center;
+
+		span {
+			svg {
+				display: none;
+			}
+		}
+	}
+}
+
+/* .navbar-item {
+	height: 100%;
+} */
+
+.navbar-items-wrapper {
+	display: flex;
+}
+
+.navbar-items{
+	display: flex;
+	align-items: center;
+}
+
+form.search-box {
+	padding: 0;
+	background-color: white;
+	order: -1;
+	margin-right: 1rem;
+	margin-left: 0;
+}
+
+.navbar .logo {
+	height: 1.4rem;
+	margin-top: 0.5rem;
+}

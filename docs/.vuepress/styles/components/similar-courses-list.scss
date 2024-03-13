@@ -1,0 +1,27 @@
+@import '../palette.scss';
+
+.simmilar-courses-holder {
+	h2 {
+		text-align: center;
+		border: none;
+		color: #111;
+		font-size: 2rem;
+		line-height: 1.1;
+		font-weight: 600;
+	}
+
+	.theme-default-content {
+		&.course-list {
+			&.simmilar-courses {
+				max-width: 90% !important;
+				grid-template-columns: repeat(4, minmax(0, 1fr));
+				gap: 2rem;
+				margin-top: 5rem;
+
+				&>*:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}

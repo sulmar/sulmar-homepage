@@ -1,0 +1,29 @@
+@import '../palette.scss';
+
+.custom-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem 2.5rem;
+	border-top: 1px solid #eaecef;
+	background-color: #222;
+
+	.icons {
+		display: flex;
+		justify-content: center;
+		padding: 1rem 0 1rem;
+		gap: 2.5rem;
+
+		img {
+			&.social-icon {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+
+	p {
+		font-size: 0.9rem;
+		color: #808080;
+	}
+}

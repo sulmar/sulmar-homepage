@@ -1,0 +1,17 @@
+@import '../palette.scss';
+
+form {
+	padding: 3rem;
+	background-color: $secondaryColor;
+
+	.v-field__field {
+		background-color: $secondaryColor;
+	}
+
+}
+
+form .success-message,
+form .error-message {
+	padding-top: 20px;
+	text-align: center;
+}
