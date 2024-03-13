@@ -3,7 +3,7 @@
       <div class="icons">
         <a href="mailto:marcin.sulecki@sulmar.pl">
           <img
-            src="icons/socials/envelope.svg"
+          :src="$withBase('icons/socials/envelope.svg')"
             alt="email"
             class="social-icon"
           />
@@ -15,7 +15,7 @@
           rel="noopener noreferrer"
         >
           <img
-            src="icons/socials/github.svg"
+          :src="$withBase('icons/socials/github.svg')"
             alt="GitHub"
             class="social-icon"
           />
@@ -27,7 +27,7 @@
           rel="noopener noreferrer"
         >
           <img
-            src="icons/socials/linkedin.svg"
+          :src="$withBase('icons/socials/linkedin.svg')"
             alt="LinkedIn"
             class="social-icon"
           />
@@ -39,7 +39,7 @@
           rel="noopener noreferrer"
         >
           <img
-            src="icons/socials/twitter.svg"
+          :src="$withBase('icons/socials/twitter.svg')"
             alt="Twitter"
             class="social-icon"
           />

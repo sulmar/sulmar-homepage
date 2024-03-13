@@ -118,15 +118,15 @@
 
                 <v-container class="contact-items-container">
                     <div class="contact-item">
-                        <img src="icons/skype.svg" alt="Location Icon">
+                        <img :src="$withBase('/icons/skype.svg')" alt="Location Icon">
                         <p>Skype</p>
                     </div>
                     <div class="contact-item">
-                        <img src="icons/email.svg" alt="Email Icon">
+                        <img :src="$withBase('/icons/email.svg')" alt="Email Icon">
                         <p>info@twojastrona.com</p>
                     </div>
                     <div class="contact-item">
-                        <img src="icons/phone.svg" alt="Phone Icon">
+                        <img :src="$withBase('/icons/phone.svg')" alt="Phone Icon">
                         <p>+48 123 456 789</p>
                     </div>
                 </v-container>
