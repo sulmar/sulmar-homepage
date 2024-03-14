@@ -61,7 +61,7 @@
 
             <v-container class="course-content">
                 <h2>Program szkolenia</h2>
-                <p>3 Dni . 15 Sekcji . 45 Tematów </p>
+                <p>3 Dni</p>
                 <Content id="program" />
             </v-container>
 
