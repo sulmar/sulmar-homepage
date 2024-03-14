@@ -1,6 +1,6 @@
 <template>
     <Navbar />
-    <div class="course-layout">
+    <div class="course-layout" :class="frontmatter.category">
         <h1>{{ frontmatter.title }}</h1>
 
         <section class="hero-course">
