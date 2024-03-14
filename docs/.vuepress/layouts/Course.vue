@@ -212,8 +212,29 @@ onMounted(() => {
             content.addEventListener("click", function (event) {
                 event.stopPropagation(); // Zatrzymuje propagację kliknięcia w rozwijanej liście
             });
-
         });
+
+        //Adding custom icons to the list
+        const topics = headers[i].children;
+        //copy reference to children
+        let children = Array.from(topics[0].children);
+
+        for (let li of children) {
+            console.log(li);
+
+            let contentDiv = document.createElement('div');
+            contentDiv.classList.add("topic");
+            // Move li content to new div
+            while (li.firstChild) {
+                contentDiv.appendChild(li.firstChild);
+            }
+
+            let iconDiv = document.createElement('div');
+            iconDiv.classList.add("list-icon");
+
+            li.appendChild(iconDiv);
+            li.appendChild(contentDiv);
+        }
     }
 })
 
