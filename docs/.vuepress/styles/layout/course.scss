@@ -128,6 +128,15 @@
 				border-top: 1px solid #3c3c3c;
 			}
 
+			&>.chevron-icon {
+				height: 25px;
+				width: 25px;
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				fill: $primaryColor;
+			}
+
 			&>ul {
 				max-height: 0;
 				overflow: hidden;
