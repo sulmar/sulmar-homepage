@@ -197,10 +197,18 @@ onMounted(() => {
 
 
     for (let i = 0; i < headers.length; i++) {
+
+        const svgIcon = '<svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-down</title><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>'
+
+        headers[i].insertAdjacentHTML('beforeend', svgIcon);
+
         headers[i].addEventListener("click", function () {
             let content = this.children[0];
+            const icon = this.querySelector('.chevron-icon');
 
             content.classList.toggle("active");
+            icon.style.transform = content.classList.contains("active") ? 'rotate(180deg)' : 'rotate(0deg)';
+
             content.addEventListener("click", function (event) {
                 event.stopPropagation(); // Zatrzymuje propagację kliknięcia w rozwijanej liście
             });
