@@ -10,6 +10,7 @@ category: dotnet
 tags:
   - dotnet
   - razor-pages
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi odio rerum aliquam quos voluptatum accusantium suscipit, debitis tempore, assumenda soluta ad aliquid alias voluptates iste similique optio ipsam minima? Doloremque. Animi odio rerum aliquam quos voluptatum accusantium suscipit, debitis tempore dolor sit amet.
 outcomes:
  - Confidently build front-end apps with React and TypeScript
  - Build reusable function components

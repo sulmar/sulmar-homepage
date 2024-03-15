@@ -12,6 +12,7 @@ tags:
   - redis
   - dotnet
   - nosql
+description: Redis to magazyn danych o strukturze klucza i wartości typu open source, przechowywany w pamięci, należący do kategorii baz danych NoSQL. Redis może być używany jako wysokowydajna pamięć podręczna w pamięci, broker komunikatów i silnik przesyłania strumieniowego. Dzięki temu kursowi zdobędziesz umiejętność tworzenia wydajnych aplikacji przy użyciu Redis i .NET.
 outcomes:
  - Confidently build front-end apps with React and TypeScript
  - Build reusable function components
