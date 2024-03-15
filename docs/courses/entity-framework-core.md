@@ -13,6 +13,13 @@ tags:
   - entity-framework-core
   - orm
   - sql
+outcomes:
+ - Confidently build front-end apps with React and TypeScript
+ - Build reusable function components
+ - Style your components using vanilla CSS, CSS modules, and CSS-in-JS
+ - Use VSCode shortcuts to increase your productivity
+ - Deploy your React apps
+ - Write clean code like a pro
 ---
 
 
