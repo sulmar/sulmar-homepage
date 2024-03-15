@@ -6,7 +6,7 @@ import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
 
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide} from 'vue3-carousel'
+import { Carousel, Slide, Navigation} from 'vue3-carousel'
 
 import Home from './layouts/Home.vue';
 import Course from './layouts/Course.vue';
@@ -23,6 +23,7 @@ export default defineClientConfig({
         app.use(vuetify);
         app.component('Carousel', Carousel);
         app.component('Slide', Slide);
+        app.component('Navigation', Navigation);
     },
     layouts: {
         Home,

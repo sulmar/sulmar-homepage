@@ -5,6 +5,17 @@
 	
   } */
 
+  .carousel {
+	margin: 0 -5px;
+	
+	button {
+		background-color: #5591c5;
+		border-radius: 9999px;
+		color: $secondaryColor;
+	}
+  }
+
+
 
 .course-cell {
 	padding: 15px 10px;
