@@ -11,10 +11,7 @@
 
                     <v-col cols="12" sm="4" class="course-desc">
                         <h1>{{ frontmatter.title }}</h1>
-                        <p>REDIS jest strukturą danych typu open-source trzymaną w pamięci, używana jako baza danych
-                            NoSQL, pamięć podręczna lub broker wiadomości. Stosowana jest w rozwiązaniach gdzie wymagana
-                            jest analiza w czasie rzeczywistym, gdyż zapewnia bardzo wysoką wydajność i niezawodność.
-                        </p>
+                        <p>{{ frontmatter.description }}</p>
                     </v-col>
                     <v-col cols="12" sm="8">
                         <div class="hero-img-holder">
