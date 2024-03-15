@@ -141,15 +141,33 @@
 				max-height: 0;
 				overflow: hidden;
 				transition: all 0.4s ease;
-				list-style-type: disc;
+				/* list-style-image: url("/docs/.vuepress/public/icons/circle.svg"); */
 				cursor: default;
+				list-style: none;
+				padding-left: 0;
+
 
 				&>li {
 					margin-top: 5px;
 					padding: 7px 0;
 					max-width: 381px;
-					font-size: 1rem;
 					margin-top: 5px;
+					display: flex;
+					
+
+					&>.list-icon {
+						border: 1px solid rgb(229 231 235);
+						border-radius: 9999px;
+						width: 1.25rem;
+						height: 1.25rem;
+						margin-top: 5px;
+					}
+
+					&>.topic {
+						font-weight: 400;
+						font-size: 1rem;
+						padding-left: 1rem;
+					}
 				}
 
 				&.active {
