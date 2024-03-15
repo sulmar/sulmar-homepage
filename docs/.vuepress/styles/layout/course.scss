@@ -31,9 +31,37 @@
 					font-weight: 600;
 				}
 
+				.hero-details {
+					display: flex;
+					flex-wrap: wrap;
+					margin-top: 1.5rem;
+					
+					
+
+					.detail-holder {
+						display: flex;
+						align-items: center;
+						margin-bottom: 0.9rem;
+						//background-color: #9aa4b63d;
+						// border-radius: 2rem;
+						// box-sizing: border-box;
+						// padding: 0.5rem 1rem;
+						// margin-right: 1rem;
+
+						p {
+							margin-top: 0;
+							padding-left: 0.5rem;
+							padding-right: 1rem;
+							//font-weight: 200;
+							font-size: 14px;
+							//font-family: "Barlow Semi Condensed", sans-serif;
+						}
+					}
+				}
+
 				p {
 					color: $secondaryColor;
-					margin-top: 1.1rem;
+					margin-top: 1rem;
 					font-size: 1.1rem;
 					font-weight: 400;
 				}

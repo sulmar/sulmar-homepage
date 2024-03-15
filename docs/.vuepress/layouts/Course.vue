@@ -11,7 +11,28 @@
 
                     <v-col cols="12" sm="4" class="course-desc">
                         <h1>{{ frontmatter.title }}</h1>
+
+                       
+                        <div class="hero-details">
+                            <div class="detail-holder">
+                                <v-icon icon="mdi-poll" size="x-small" color="white"></v-icon>
+                                <p>Średnio-zaawansowany</p>
+                            </div>
+                            <div class="detail-holder">
+                                <v-icon icon="mdi-text-box-outline" size="x-small" color="white"></v-icon>
+                                <p>10 Lekcji</p>
+                            </div>
+                            <div class="detail-holder">
+                                <v-icon icon="mdi-clock-outline" size="x-small" color="white"></v-icon>
+                                <p>20 godzin</p>
+                            </div>
+                            <div class="detail-holder">
+                                <v-icon icon="mdi-medal-outline" size="x-small" color="white"></v-icon>
+                                <p>Certyfiktat ukończenia</p>
+                            </div>
+                        </div>
                         <p>{{ frontmatter.description }}</p>
+
                     </v-col>
                     <v-col cols="12" sm="8">
                         <div class="hero-img-holder">
