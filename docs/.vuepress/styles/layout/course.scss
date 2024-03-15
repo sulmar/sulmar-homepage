@@ -163,12 +163,12 @@
 			color: #000;
 			transition: all 0.2s ease;
 			padding: 15px 0;
-			border-bottom: 1px solid #3c3c3c;
+			border-bottom: 1px solid rgb(229 231 235);
 			position: relative;
 			cursor: pointer;
 
 			&:first-of-type {
-				border-top: 1px solid #3c3c3c;
+				border-top: 1px solid rgb(229 231 235);
 			}
 
 			&>.chevron-icon {
