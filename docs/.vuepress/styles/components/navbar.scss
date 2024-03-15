@@ -1,0 +1,26 @@
+/* Customizing default navbar */
+@import '../palette.scss';
+
+
+html.dark {
+
+    .navbar {
+
+        .navbar-items-wrapper {
+
+            .external-link {
+                background-image: url("/docs/.vuepress/public/icons/github-mark-white.svg");;
+            }
+
+            .search-box {
+                background-color: transparent;
+
+                input {
+                    background-color: #262c34;
+                }
+
+            }
+        }
+
+    }
+}
