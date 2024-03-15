@@ -1,7 +1,7 @@
 <template>
     <div style="width: 100%; display:block; margin:0 auto;" class="carousel-holder">
 
-        <Carousel :itemsToShow="3" :itemsToScroll="1" :autoplay="400000" :transition="700" :wrapAround="true"
+        <Carousel :itemsToShow="3" :itemsToScroll="1" :autoplay="3000" :transition="700" :wrapAround="true"
             :mouseDrag="true" :pauseAutoplayOnHover="true">
 
             <Slide v-for="testimonial in testimonials" :key="testimonial.path" class="course-cell"
