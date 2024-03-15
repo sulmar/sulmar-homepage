@@ -10,7 +10,6 @@ This is the content of home page. Check [Home Page Docs][default-theme-home] for
 
 - To run the site locally:
 ~~~ bash
-cd docs
 npm install
-npm run dev
+npm run docs:dev
 ~~~
