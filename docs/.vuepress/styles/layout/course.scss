@@ -222,7 +222,7 @@
 			&::before {
 				//to create indent in lower lines
 				margin-left: -3.2rem;
-				content: counter(item-counter) " ";
+				content: counter(item-counter) "  ";
 				display: inline-block;
 				border: 1px solid rgb(229 231 235);
 				border-radius: 9999px;
@@ -231,6 +231,10 @@
 				margin-right: 1rem;
 				width: 2.25rem;
 				height: 2.25rem;
+			}
+
+			&.two-digits::before {
+				padding-left: 8px;
 			}
 
 
