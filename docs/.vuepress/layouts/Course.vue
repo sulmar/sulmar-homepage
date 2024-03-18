@@ -96,8 +96,8 @@
                         <p>10 Lekcji</p>
                     </div>
                     <div class="detail-holder">
-                        <v-icon icon="mdi-clock-outline" size="large" color="light-blue-darken-1"></v-icon>
-                        <p>20 godzin</p>
+                        <v-icon icon="mdi-calendar-month" size="large" color="light-blue-darken-1"></v-icon>
+                        <p>{{ frontmatter.duration}} dni</p>
                     </div>
                     <div class="detail-holder">
                         <v-icon icon="mdi-medal-outline" size="large" color="light-blue-darken-1"></v-icon>
@@ -114,7 +114,6 @@
 
             <v-container class="course-content">
                 <h2>Program szkolenia</h2>
-                <p>3 Dni</p>
                 <Content id="program" />
             </v-container>
 
