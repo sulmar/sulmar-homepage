@@ -49,6 +49,19 @@
 						// padding: 0.5rem 1rem;
 						// margin-right: 1rem;
 
+						.level-holder {
+							display: flex;
+							align-items: center;
+
+							svg {
+								width: 20px;
+							}
+						}
+
+						i {
+							width: 20px;
+						}
+
 						p {
 							margin-top: 0;
 							padding-left: 0.5rem;

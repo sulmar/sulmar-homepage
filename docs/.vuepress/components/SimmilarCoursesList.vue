@@ -55,13 +55,14 @@ async function loadCourses() {
     const pages = siteData.value.frontmatterData;
     const currentCategory = props.currentPage.frontmatter.category;
     const currentTitle = props.currentPage.title;
+    console.log(currentTitle);
 
     courses.value = pages
         .filter(page =>
             page.path.startsWith('/courses/') &&
             page.path !== folderPath &&
             page.frontmatter.category.includes(currentCategory) &&
-            page.title !== currentTitle)
+            page.frontmatter.title !== currentTitle)
         .map(page => ({
             path: page.path,
             title: page.frontmatter.title,

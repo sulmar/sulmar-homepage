@@ -12,11 +12,41 @@
                     <v-col cols="12" sm="4" class="course-desc">
                         <h1>{{ frontmatter.title }}</h1>
 
-                       
+
                         <div class="hero-details">
                             <div class="detail-holder">
-                                <v-icon icon="mdi-poll" size="x-small" color="white"></v-icon>
-                                <p>Średnio-zaawansowany</p>
+
+                                <div v-if="frontmatter.difficulty == 1" class="level-holder">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="9" y="7" width="2.5" height="10" fill="#8F8F99"></rect>
+                                        <rect x="3.5" y="11" width="2.5" height="6" fill="#FAFAFA"></rect>
+                                        <rect x="14.5" y="3" width="2.5" height="14" fill="#8F8F99"></rect>
+                                    </svg>
+                                    <p>Początkujący</p>
+                                </div>
+
+                                <div v-if="frontmatter.difficulty == 2" class="level-holder">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="9" y="7" width="2.5" height="10" fill="#FAFAFA"></rect>
+                                        <rect x="3.5" y="11" width="2.5" height="6" fill="#FAFAFA"></rect>
+                                        <rect x="14.5" y="3" width="2.5" height="14" fill="#8F8F99"></rect>
+                                    </svg>
+                                    <p>Średnio-zaawansowany</p>
+                                </div>
+
+                                <div v-if="frontmatter.difficulty == 3" class="level-holder">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="9" y="7" width="2.5" height="10" fill="#FAFAFA"></rect>
+                                        <rect x="3.5" y="11" width="2.5" height="6" fill="#FAFAFA"></rect>
+                                        <rect x="14.5" y="3" width="2.5" height="14" fill="#FAFAFA"></rect>
+                                    </svg>
+                                    <p>Zaawansowany</p>
+                                </div>
+
+
                             </div>
                             <div class="detail-holder">
                                 <v-icon icon="mdi-text-box-outline" size="x-small" color="white"></v-icon>
@@ -31,7 +61,7 @@
                                 <p>Certyfiktat ukończenia</p>
                             </div>
                         </div>
-                        
+
 
                     </v-col>
                     <v-col cols="12" sm="8">
@@ -76,7 +106,7 @@
             <v-container>
                 <h2>Course overview</h2>
                 <p>{{ frontmatter.description }}</p>
-            </v-container>  
+            </v-container>
         </section>
 
         <section class="curriculum">
@@ -199,9 +229,9 @@ const outcomes_firstHalf = computed(() => frontmatter.value.outcomes.slice(0, 3)
 const outcomes_secondHalf = computed(() => frontmatter.value.outcomes.slice(3, 6));
 
 
-watchEffect(() => {
-    console.log(frontmatter.value.outcomes); // Teraz to będzie reagować na zmiany
-});
+/* watchEffect(() => {
+    console.log(frontmatter.value.outcomes);
+}); */
 
 
 onMounted(() => {
@@ -234,7 +264,6 @@ onMounted(() => {
         let children = Array.from(topics[0].children);
 
         for (let li of children) {
-            console.log(li);
 
             let contentDiv = document.createElement('div');
             contentDiv.classList.add("topic");
