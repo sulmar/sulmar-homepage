@@ -1,7 +1,6 @@
 <template>
     <Navbar />
     <div class="course-layout" :class="frontmatter.category">
-        <h1>{{ frontmatter.title }}</h1>
 
         <section class="hero-course">
             <div class="hero-course-content">
@@ -9,62 +8,15 @@
                 <!-- <v-container> -->
                 <v-row no-gutters>
 
-                    <v-col cols="12" sm="4" class="course-desc">
+                    <v-col cols="12" sm="5" class="course-desc">
                         <h1>{{ frontmatter.title }}</h1>
 
 
-                        <div class="hero-details">
-                            <div class="detail-holder">
 
-                                <div v-if="frontmatter.difficulty == 1" class="level-holder">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="9" y="7" width="2.5" height="10" fill="#8F8F99"></rect>
-                                        <rect x="3.5" y="11" width="2.5" height="6" fill="#FAFAFA"></rect>
-                                        <rect x="14.5" y="3" width="2.5" height="14" fill="#8F8F99"></rect>
-                                    </svg>
-                                    <p>Początkujący</p>
-                                </div>
-
-                                <div v-if="frontmatter.difficulty == 2" class="level-holder">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="9" y="7" width="2.5" height="10" fill="#FAFAFA"></rect>
-                                        <rect x="3.5" y="11" width="2.5" height="6" fill="#FAFAFA"></rect>
-                                        <rect x="14.5" y="3" width="2.5" height="14" fill="#8F8F99"></rect>
-                                    </svg>
-                                    <p>Średnio-zaawansowany</p>
-                                </div>
-
-                                <div v-if="frontmatter.difficulty == 3" class="level-holder">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="9" y="7" width="2.5" height="10" fill="#FAFAFA"></rect>
-                                        <rect x="3.5" y="11" width="2.5" height="6" fill="#FAFAFA"></rect>
-                                        <rect x="14.5" y="3" width="2.5" height="14" fill="#FAFAFA"></rect>
-                                    </svg>
-                                    <p>Zaawansowany</p>
-                                </div>
-
-
-                            </div>
-                            <div class="detail-holder">
-                                <v-icon icon="mdi-text-box-outline" size="x-small" color="white"></v-icon>
-                                <p>10 Lekcji</p>
-                            </div>
-                            <div class="detail-holder">
-                                <v-icon icon="mdi-clock-outline" size="x-small" color="white"></v-icon>
-                                <p>20 godzin</p>
-                            </div>
-                            <div class="detail-holder">
-                                <v-icon icon="mdi-medal-outline" size="x-small" color="white"></v-icon>
-                                <p>Certyfiktat ukończenia</p>
-                            </div>
-                        </div>
 
 
                     </v-col>
-                    <v-col cols="12" sm="8">
+                    <v-col cols="12" sm="7">
                         <div class="hero-img-holder">
                             <!-- <img src="/images/screen.png" alt=""> -->
                         </div>
@@ -80,7 +32,7 @@
                 <h2>Czego się nauczysz</h2>
                 <v-row>
 
-                    <v-col cols="12" sm="6">
+                    <v-col cols="12" sm="6" class="column">
                         <ul>
                             <li v-for="(outcome, index) in outcomes_firstHalf" :key="'outcome1-' + index">
                                 <v-icon color="info" icon="mdi-check" size="small"></v-icon>
@@ -89,7 +41,7 @@
                         </ul>
                     </v-col>
 
-                    <v-col cols="12" sm="6">
+                    <v-col cols="12" sm="6" class="column">
                         <ul>
                             <li v-for="(outcome, index) in outcomes_secondHalf" :key="'outcome2-' + index">
                                 <v-icon color="info" icon="mdi-check" size="small"></v-icon>
@@ -104,7 +56,56 @@
 
         <section class="overview">
             <v-container>
+                <div class="hero-details">
+                    <div class="detail-holder">
+
+                        <div v-if="frontmatter.difficulty == 1" class="level-holder">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="9" y="7" width="2.5" height="10" fill="#B3E5FC"></rect>
+                                <rect x="3.5" y="11" width="2.5" height="6" fill="#039BE5"></rect>
+                                <rect x="14.5" y="3" width="2.5" height="14" fill="#B3E5FC"></rect>
+                            </svg>
+                            <p>Początkujący</p>
+                        </div>
+
+                        <div v-if="frontmatter.difficulty == 2" class="level-holder">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="9" y="7" width="2.5" height="10" fill="#039BE5"></rect>
+                                <rect x="3.5" y="11" width="2.5" height="6" fill="#039BE5"></rect>
+                                <rect x="14.5" y="3" width="2.5" height="14" fill="#B3E5FC"></rect>
+                            </svg>
+                            <p>Średnio-zaawansowany</p>
+                        </div>
+
+                        <div v-if="frontmatter.difficulty == 3" class="level-holder">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="9" y="7" width="2.5" height="10" fill="#039BE5"></rect>
+                                <rect x="3.5" y="11" width="2.5" height="6" fill="#039BE5"></rect>
+                                <rect x="14.5" y="3" width="2.5" height="14" fill="#039BE5"></rect>
+                            </svg>
+                            <p>Zaawansowany</p>
+                        </div>
+
+
+                    </div>
+                    <div class="detail-holder">
+                        <v-icon icon="mdi-text-box-outline" size="large" color="light-blue-darken-1"></v-icon>
+                        <p>10 Lekcji</p>
+                    </div>
+                    <div class="detail-holder">
+                        <v-icon icon="mdi-clock-outline" size="large" color="light-blue-darken-1"></v-icon>
+                        <p>20 godzin</p>
+                    </div>
+                    <div class="detail-holder">
+                        <v-icon icon="mdi-medal-outline" size="large" color="light-blue-darken-1"></v-icon>
+                        <p>Certyfiktat ukończenia</p>
+                    </div>
+                </div>
                 <h2>Course overview</h2>
+                
                 <p>{{ frontmatter.description }}</p>
             </v-container>
         </section>
@@ -245,6 +246,10 @@ onMounted(() => {
         const svgIcon = '<svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>chevron-down</title><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>'
 
         headers[i].insertAdjacentHTML('beforeend', svgIcon);
+
+        if (i > 8) {
+            headers[i].classList.add("two-digits");
+        }
 
         headers[i].addEventListener("click", function () {
             let content = this.children[0];
