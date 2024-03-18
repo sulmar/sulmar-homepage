@@ -80,7 +80,7 @@
                 <h2>Czego się nauczysz</h2>
                 <v-row>
 
-                    <v-col cols="12" sm="6">
+                    <v-col cols="12" sm="6" class="column">
                         <ul>
                             <li v-for="(outcome, index) in outcomes_firstHalf" :key="'outcome1-' + index">
                                 <v-icon color="info" icon="mdi-check" size="small"></v-icon>
@@ -89,7 +89,7 @@
                         </ul>
                     </v-col>
 
-                    <v-col cols="12" sm="6">
+                    <v-col cols="12" sm="6" class="column">
                         <ul>
                             <li v-for="(outcome, index) in outcomes_secondHalf" :key="'outcome2-' + index">
                                 <v-icon color="info" icon="mdi-check" size="small"></v-icon>
