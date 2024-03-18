@@ -4,18 +4,19 @@
 .course-list {
   margin-top: 5rem;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
 
   .course-card {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
     border: 1px solid rgb(226, 232, 240);
     border-radius: 0.5rem;
     width: 100%;
-    max-width: 24rem;
+    //max-width: 24rem;
     cursor: pointer;
     transition: box-shadow 0.2s, transform 0.2s;
-    background-color: white;
+    height: 592px;
+    background-color: #BA68C8;
 
     @media (min-width: 1024px) {
       //display: flex; 
@@ -25,14 +26,15 @@
     &:hover {
       box-shadow: 0 0.225rem 0.35rem #00000026, 0 0.225rem 0.6rem #00000026;
       transform: scale3d(1.03, 1.03, 1.08) translate3d(0.1rem, -0.25rem, 20rem);
+      transform: scale(1.01);
     }
 
-    .image-box {
+    /* .image-box {
       overflow: hidden;
       flex: none;
       border-top-left-radius: 0.25rem;
       border-top-right-radius: 0.25rem;
-      height: 12rem;
+      height: 100%;
       text-align: center;
       background-size: cover;
       background-position: center;
@@ -42,25 +44,20 @@
         border-top-right-radius: 0;
         border-top-left-radius: 0.25rem;
         border-bottom-left-radius: 0.25rem;
-        //width: 12rem; 
-        //height: auto; 
       }
-    }
+    } */
 
     .course-box {
-      display: flex;
+      //display: flex;
       padding: 1rem;
       padding-bottom: 0.4rem;
-      flex-direction: column;
-      justify-content: space-between;
-      border-bottom-right-radius: 0.25rem;
-      border-bottom-left-radius: 0.25rem;
-      border-right-width: 1px;
-      border-bottom-width: 1px;
-      border-left-width: 1px;
+      //flex-direction: column;
+      //justify-content: space-between;
       border-color: #9CA3AF;
       line-height: 1.5;
-      background-color: #ffffff;
+      color: $secondaryColor;
+      text-align: center;
+      margin-top: 5rem;
 
       @media (min-width: 1024px) {
         border-bottom-right-radius: 0;
@@ -77,17 +74,18 @@
 
         .title {
           margin-bottom: 0.5rem;
-          font-size: 1.1rem;
+          font-size: 2.2rem;
           line-height: 1.75rem;
-          font-weight: 700;
-          color: #111827;
+          font-weight: 600;
+          
         }
 
         .tagline {
-          font-size: 0.9rem;
+          font-size: 1.2rem;
           line-height: 1.5rem;
+          margin-top: 1.5rem;
           margin-bottom: 0;
-          color: #374151;
+
         }
       }
 

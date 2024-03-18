@@ -14,8 +14,8 @@
           }
         })
         " class="course-card" :class=course.category>
-        <div class="image-box" :style="{ 'background-image': 'url(' + course.image + ')' }">
-        </div>
+        <!-- <div class="image-box" :style="{ 'background-image': 'url(' + course.image + ')' }">
+        </div> -->
 
         <div class="course-box">
           <div class="course-title-and-tagline">
@@ -23,11 +23,11 @@
             <p class="tagline">{{ course.tagline }}</p>
           </div>
 
-          <div class="extra-info">
+          <!-- <div class="extra-info">
             <span class="extra-info-item">{{ course.duration }} dni</span>
             <span class="extra-info-item">sth</span>
             <span class="extra-info-item">c#</span>
-          </div>
+          </div> -->
         </div>
       </div>
 

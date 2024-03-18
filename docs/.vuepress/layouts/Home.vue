@@ -24,11 +24,12 @@
                         wiedza i doświadczenie w miłej postaci. Lorem ipsum... </p>
                 </header>
 
-                <CoursesList />
-                <v-btn rounded="xl" size="large" variant="outlined" class="link-btn" @click="toggleExpansion">
-                    {{ isExpanded ? 'Mniej kursów' : 'Wszystkie kursy' }}
-                </v-btn>
+
             </v-container>
+            <CoursesList />
+            <v-btn rounded="xl" size="large" variant="outlined" class="link-btn" @click="toggleExpansion">
+                {{ isExpanded ? 'Mniej kursów' : 'Wszystkie kursy' }}
+            </v-btn>
 
 
         </section>
