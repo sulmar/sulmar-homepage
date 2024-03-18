@@ -176,6 +176,7 @@
 		list-style: none;
 		font-weight: 600;
 		padding: 0;
+		counter-reset: item-counter;
 
 		&>li {
 			font-size: 1.2rem;
@@ -185,6 +186,20 @@
 			border-bottom: 1px solid rgb(229 231 235);
 			position: relative;
 			cursor: pointer;
+			counter-increment: item-counter;
+
+			&::before {
+				content: counter(item-counter) " ";
+				display: inline-block;
+				border: 1px solid rgb(229 231 235);
+				border-radius: 9999px;
+				padding-left: 12px;
+				padding-top: 1px;
+				margin-right: 1rem;
+				width: 2.25rem;
+				height: 2.25rem;
+			}
+
 
 			&:first-of-type {
 				border-top: 1px solid rgb(229 231 235);
@@ -203,10 +218,9 @@
 				max-height: 0;
 				overflow: hidden;
 				transition: all 0.4s ease;
-				/* list-style-image: url("/docs/.vuepress/public/icons/circle.svg"); */
 				cursor: default;
 				list-style: none;
-				padding-left: 0;
+				padding-left: 7px;
 
 
 				&>li {
