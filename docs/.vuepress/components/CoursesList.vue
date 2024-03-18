@@ -23,6 +23,10 @@
             <p class="tagline">{{ course.tagline }}</p>
           </div>
 
+          <div class="image-b">
+            <img :src="$withBase('/images/kaktus.png')" alt="">
+          </div>
+
           <!-- <div class="extra-info">
             <span class="extra-info-item">{{ course.duration }} dni</span>
             <span class="extra-info-item">sth</span>
