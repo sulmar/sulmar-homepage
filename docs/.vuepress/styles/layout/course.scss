@@ -33,10 +33,11 @@
 
 				.hero-details {
 					display: flex;
+					flex-direction: column;
 					flex-wrap: wrap;
 					margin-top: 1.5rem;
-					
-					
+
+
 
 					.detail-holder {
 						display: flex;
@@ -131,6 +132,24 @@
 			}
 		}
 	}
+
+	.overview {
+		padding: 2rem 0;
+
+		h2 {
+			font-size: 2rem;
+			line-height: 1.1;
+			letter-spacing: 0em;
+			margin-bottom: 1.5rem;
+			border: none;
+		}
+
+		p {
+			font-size: 1.125rem;
+			line-height: 1.75rem;
+			letter-spacing: -0.025em;
+		}
+	}
 }
 
 .curriculum {
@@ -196,7 +215,7 @@
 					max-width: 381px;
 					margin-top: 5px;
 					display: flex;
-					
+
 
 					&>.list-icon {
 						border: 1px solid rgb(229 231 235);
@@ -361,7 +380,7 @@ section {
 		}
 
 		.form-img {
-			background-image: url("/docs/.vuepress/public/images/cta.jpg");
+			background-image: url("/docs/.vuepress/public/images/test2.png");
 			background-position: center;
 			background-size: cover;
 			height: 100%;

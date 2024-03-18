@@ -4,17 +4,11 @@
 
         <section class="hero">
             <div class="hero-content">
-                <v-row no-gutters>
-                    <v-col cols="12" sm="8">
-                    </v-col>
-                    <v-col cols="12" sm="4">
-                        <h1>Szkolenia dla programistów</h1>
-                        <p>Trudne rzeczy w łatwy sposób</p>
-
-                    </v-col>
-                </v-row>
+                <!-- <h1>Szkolenia dla programistów</h1> -->
+                <p>Koduj. Szybciej. Lepiej. </p>
             </div>
-            <v-btn rounded="xl" size="large" variant="outlined" @click="scrollToSection" class="hero-btn">Zamów szkolenie</v-btn>
+            <v-btn rounded="xl" size="large" variant="outlined" @click="scrollToSection" class="hero-btn">Zamów
+                szkolenie</v-btn>
         </section>
 
 
@@ -171,17 +165,17 @@ const isExpanded = ref(false);
 
 // Metody przekształcone na funkcje składu
 const scrollToSection = () => {
-  const coursesSection = document.querySelector('#courses');
-  if (coursesSection) {
-    coursesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
+    const coursesSection = document.querySelector('#courses');
+    if (coursesSection) {
+        coursesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 };
 
 const toggleExpansion = () => {
-  isExpanded.value = !isExpanded.value;
-  let content = document.querySelector(".home-list");
-  if (content) {
-    content.classList.toggle("expanded");
-  }
+    isExpanded.value = !isExpanded.value;
+    let content = document.querySelector(".home-list");
+    if (content) {
+        content.classList.toggle("expanded");
+    }
 };
 </script>

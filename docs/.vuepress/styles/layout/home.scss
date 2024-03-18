@@ -2,7 +2,7 @@
 
 .home-custom {
 	.hero {
-		background-image: url("/docs/.vuepress/public/images/hero-course2.jpg");
+		background-image: url("/docs/.vuepress/public/images/nowe.jpg");
 		background-size: cover;
 		background-position: center;
 		height: 100vh;
@@ -11,32 +11,40 @@
 		position: relative;
 		display: flex;
 		align-content: center;
-		align-items: center;
+		align-items: top;
+		justify-content: center;
+		text-align: center;
 
 		.hero-content {
 			margin-left: auto;
 			margin-right: auto;
 			width: 100%;
+			margin-top: 5rem;
 
 			h1 {
 				font-size: 3rem;
 				font-weight: 600;
+				color: #f7f7f7
 			}
 
 			p {
-				color: #111;
+				color: #f7f7f7d9;
 				margin-top: 1.1rem;
-				font-size: 1.5rem;
+				font-size: 2rem;
 				font-weight: 400;
+				/* position: absolute;
+				left: 51%;
+				transform: translateX(-50%);
+				bottom: 7rem; */
 			}
 		}
 
 		.hero-btn {
 			position: absolute;
 			bottom: 3rem;
-			left: 51%;
+			left: 50%;
 			transform: translateX(-50%);
-			color: rgba(0, 0, 0, .87);
+			color: #f7f7f7a1;
 		}
 	}
 

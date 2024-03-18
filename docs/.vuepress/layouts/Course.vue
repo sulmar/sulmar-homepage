@@ -31,7 +31,7 @@
                                 <p>Certyfiktat ukończenia</p>
                             </div>
                         </div>
-                        <p>{{ frontmatter.description }}</p>
+                        
 
                     </v-col>
                     <v-col cols="12" sm="8">
@@ -70,6 +70,13 @@
 
                 </v-row>
             </v-container>
+        </section>
+
+        <section class="overview">
+            <v-container>
+                <h2>Course overview</h2>
+                <p>{{ frontmatter.description }}</p>
+            </v-container>  
         </section>
 
         <section class="curriculum">
