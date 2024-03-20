@@ -142,6 +142,8 @@
 
         <section class="address">
             <v-container>
+                <h2>Znajdź nas na mapie</h2>
+                <p>ul. Erazma Ciołka 10 lok. 229 <br>01-402 Warszawa</p>
                 <div class="map-holder">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1221.5440269361784!2d20.945383390646306!3d52.24178425774494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb0cd91e5319%3A0xed8d6f9f4ad39be9!2sErazma%20Cio%C5%82ka%2010%2C%2001-402%20Warszawa!5e0!3m2!1spl!2spl!4v1683125894187!5m2!1spl!2spl"
