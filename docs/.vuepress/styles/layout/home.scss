@@ -52,6 +52,7 @@
 		&.courses {
 			padding-top: 8rem;
 			padding-bottom: 5rem;
+			text-align: center;
 
 			.container {
 				margin: auto;
@@ -87,29 +88,25 @@
 						font-weight: 600;
 					}
 				}
-
-				.link-btn {
-					margin: auto;
-					margin-top: 2rem;
-				}
-
-				.home-list {
-					overflow: hidden;
-					max-height: 850px;
-					transition: all 0.6s ease;
-					margin: 0 auto;
-					padding: 2rem 2.5rem;
-
-					&.expanded {
-						max-height: 1800px;
-					}
-				}
 			}
 
-			.features {
+			.link-btn {
 				margin: auto;
-				max-width: 960px !important;
+				margin-top: 2rem;
 			}
+
+			.home-list {
+				overflow: hidden;
+				max-height: 850px;
+				transition: all 0.6s ease;
+				margin: 0 auto;
+				padding: 2rem 2.5rem;
+
+				&.expanded {
+					max-height: 3500px;
+				}
+			}
+
 		}
 	}
 }
@@ -177,10 +174,11 @@ section {
 }
 
 .home-list {
-	max-width: 1100px !important;
+	//max-width: 1100px !important;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
-	gap: 2rem;
+	gap: 1rem;
 	margin-top: 5rem;
+	padding: 2rem 1rem !important;
 }
 
 .theme-default-content {

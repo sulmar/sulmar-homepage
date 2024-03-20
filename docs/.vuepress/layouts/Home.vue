@@ -7,7 +7,7 @@
                 <!-- <h1>Szkolenia dla programistów</h1> -->
                 <p>Koduj. Szybciej. Lepiej. </p>
             </div>
-            <v-btn rounded="xl" size="large" variant="outlined" @click="scrollToSection" class="hero-btn">Zamów
+            <v-btn rounded="xl" size="large" variant="outlined" @click="scrollToSection('#courses')" class="hero-btn">Zamów
                 szkolenie</v-btn>
         </section>
 
@@ -24,11 +24,13 @@
                         wiedza i doświadczenie w miłej postaci. Lorem ipsum... </p>
                 </header>
 
-                <CoursesList />
-                <v-btn rounded="xl" size="large" variant="outlined" class="link-btn" @click="toggleExpansion">
-                    {{ isExpanded ? 'Mniej kursów' : 'Wszystkie kursy' }}
-                </v-btn>
+
             </v-container>
+            <CoursesList />
+            <v-btn rounded="xl" size="large" variant="outlined" class="link-btn" 
+            @click=" () => {toggleExpansion(); if(!isExpanded) scrollToSection('#courses')}">
+                {{ isExpanded ? 'Mniej kursów' : 'Wszystkie kursy' }}
+            </v-btn>
 
 
         </section>
@@ -164,8 +166,8 @@ import OpinionsCarousel from "../components/OpinionsCarousel.vue";
 const isExpanded = ref(false);
 
 // Metody przekształcone na funkcje składu
-const scrollToSection = () => {
-    const coursesSection = document.querySelector('#courses');
+const scrollToSection = (section) => {
+    const coursesSection = document.querySelector(section);
     if (coursesSection) {
         coursesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
