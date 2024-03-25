@@ -1,0 +1,15 @@
+/* Customizing default navbar */
+@import '../palette.scss';
+
+.sidebar {
+    max-width: 0;
+
+    @media(max-width: 719px) {
+        max-width: 100%;
+        }
+    
+    &.sidebar-open {
+        transform: translateX(0);
+    }
+}
+
