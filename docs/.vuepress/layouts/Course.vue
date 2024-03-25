@@ -1,6 +1,7 @@
 <template>
-    <Navbar />
-    <div class="course-layout" :class="frontmatter.category">
+    <div class="course-layout" :class="{ 'sidebar-open': isSidebarOpen, [frontmatter.category]: true }">
+        <Navbar />
+        <Sidebar />
 
         <section class="hero-course">
             <div class="hero-course-content">
@@ -97,7 +98,7 @@
                     </div>
                     <div class="detail-holder">
                         <v-icon icon="mdi-calendar-month" size="large" color="light-blue-darken-1"></v-icon>
-                        <p>{{ frontmatter.duration}} dni</p>
+                        <p>{{ frontmatter.duration }} dni</p>
                     </div>
                     <div class="detail-holder">
                         <v-icon icon="mdi-medal-outline" size="large" color="light-blue-darken-1"></v-icon>
@@ -105,7 +106,7 @@
                     </div>
                 </div>
                 <h2>Course overview</h2>
-                
+
                 <p>{{ frontmatter.description }}</p>
             </v-container>
         </section>
@@ -217,9 +218,10 @@
 </template>
 
 <script setup>
-import { usePageFrontmatter } from '@vuepress/client'
-import Navbar from '@theme/Navbar.vue'
-import { onMounted, computed } from 'vue';
+import { usePageFrontmatter } from '@vuepress/client';
+import Navbar from '@theme/Navbar.vue';
+import Sidebar from '@theme/Sidebar.vue';
+import { onMounted, computed, ref, onBeforeUnmount } from 'vue';
 import { watchEffect } from 'vue';
 
 const frontmatter = usePageFrontmatter()
@@ -233,8 +235,28 @@ const outcomes_secondHalf = computed(() => frontmatter.value.outcomes.slice(3, 6
     console.log(frontmatter.value.outcomes);
 }); */
 
+const isSidebarOpen = ref(false);
+
+const toggleSidebar = () => {
+    isSidebarOpen.value = !isSidebarOpen.value;
+};
+
+
+
 
 onMounted(() => {
+
+    //Sidebar
+    const button = document.querySelector('.toggle-sidebar-button');
+    if (button) {
+        button.addEventListener('click', toggleSidebar);
+    }
+
+    document.querySelectorAll('.sidebar .navbar-item .route-link').forEach(item => {
+        item.addEventListener('click', toggleSidebar);
+    });
+
+    //Curriculum
     const programElement = document.getElementById("program");
     const programList = programElement.children[0];
     const headers = programList.children;
@@ -284,5 +306,17 @@ onMounted(() => {
         }
     }
 })
+
+//removing eventlisteners
+onBeforeUnmount(() => {
+    const button = document.querySelector('.toggle-sidebar-button');
+    if (button) {
+        button.removeEventListener('click', toggleSidebar);
+    }
+
+    document.querySelectorAll('.sidebar .navbar-item .route-link').forEach(item => {
+        item.removeEventListener('click', toggleSidebar);
+    });
+});
 
 </script>

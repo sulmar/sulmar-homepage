@@ -2,6 +2,42 @@
 @import '../palette.scss';
 
 
+.sidebar-open .toggle-sidebar-button {
+    .icon {
+        span:nth-child(1) {
+            transform-origin: center;
+            transform: rotate(45deg) translate3d(5.5px, 5.5px, 0);
+        }
+        span:nth-child(2) {
+            transform: scale3d(0, 1, 1);
+            margin: 6px 0;
+        }
+        span:nth-child(3) {
+            transform-origin: center;
+            transform: rotate(-45deg) translate3d(6px, -6px, 0);
+        }
+    }
+}
+
+
+.navbar {
+
+
+    .navbar-items-wrapper {
+
+        .search-box {
+            background-color: transparent;
+
+            @media (max-width:719px) {
+                margin-right: 0.2rem;
+            }
+
+        }
+    }
+
+}
+
+
 html.dark {
 
     .navbar {
@@ -14,6 +50,7 @@ html.dark {
 
             .search-box {
                 background-color: transparent;
+
 
                 input {
                     background-color: #262c34;

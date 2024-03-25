@@ -1,6 +1,7 @@
 <template>
-    <div class="home-custom">
+    <div class="home-custom" :class="{ 'sidebar-open': isSidebarOpen }">
         <Navbar />
+        <Sidebar />
 
         <section class="hero">
             <div class="hero-content">
@@ -159,13 +160,15 @@
 </template>
 
 <script setup>
-import Navbar from '@theme/Navbar.vue'
-import { ref } from 'vue';
+import Navbar from '@theme/Navbar.vue';
+import Sidebar from '@theme/Sidebar.vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 import CoursesList from "../components/CoursesList.vue";
 import OpinionsCarousel from "../components/OpinionsCarousel.vue";
 
 // useRef dla przechowywania stanu
 const isExpanded = ref(false);
+const isSidebarOpen = ref(false);
 
 // Metody przekształcone na funkcje składu
 const scrollToSection = (section) => {
@@ -182,4 +185,31 @@ const toggleExpansion = () => {
         content.classList.toggle("expanded");
     }
 };
+
+const toggleSidebar = () => {
+    isSidebarOpen.value = !isSidebarOpen.value;
+};
+
+onMounted(() => {
+  const button = document.querySelector('.toggle-sidebar-button');
+  if (button) {
+    button.addEventListener('click', toggleSidebar);
+  }
+
+  document.querySelectorAll('.sidebar .navbar-item .route-link').forEach(item => {
+    item.addEventListener('click', toggleSidebar);
+  });
+});
+
+onBeforeUnmount(() => {
+  const button = document.querySelector('.toggle-sidebar-button');
+  if (button) {
+    button.removeEventListener('click', toggleSidebar);
+  }
+
+  document.querySelectorAll('.sidebar .navbar-item .route-link').forEach(item => {
+    item.removeEventListener('click', toggleSidebar);
+  });
+});
+
 </script>

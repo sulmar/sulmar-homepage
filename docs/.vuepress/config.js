@@ -34,12 +34,7 @@ export default defineUserConfig({
         link: 'https://github.com/sulmar',
       }
     ],
-    /*  alias: {
-       '@theme/HomeFooter.vue': path.resolve(
-         __dirname,
-         './components/Footer.vue',
-       ),
-     }, */
+    sidebar: [],
   }),
 
   head: [
