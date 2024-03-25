@@ -34,6 +34,7 @@ export default defineUserConfig({
         link: 'https://github.com/sulmar',
       }
     ],
+    sidebar: [],
   }),
 
   head: [

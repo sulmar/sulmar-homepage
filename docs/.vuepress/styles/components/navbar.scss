@@ -2,6 +2,23 @@
 @import '../palette.scss';
 
 
+.navbar {
+
+    .navbar-items-wrapper {
+
+        .search-box {
+            background-color: transparent;
+
+            @media (max-width:719px) {
+                margin-right: 0.2rem;
+            }
+
+        }
+    }
+
+}
+
+
 html.dark {
 
     .navbar {
@@ -14,6 +31,7 @@ html.dark {
 
             .search-box {
                 background-color: transparent;
+
 
                 input {
                     background-color: #262c34;

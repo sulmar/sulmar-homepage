@@ -1,7 +1,7 @@
 <template>
-    <div class="home-custom">
+    <div class="home-custom" :class="{ 'sidebar-open': isSidebarOpen }">
         <Navbar />
-        <Sidebar :class="{ 'sidebar-open': isSidebarOpen }"/>
+        <Sidebar />
 
         <section class="hero">
             <div class="hero-content">
@@ -195,6 +195,10 @@ onMounted(() => {
   if (button) {
     button.addEventListener('click', toggleSidebar);
   }
+
+  document.querySelectorAll('.sidebar .navbar-item .route-link').forEach(item => {
+    item.addEventListener('click', toggleSidebar);
+  });
 });
 
 onBeforeUnmount(() => {
@@ -202,6 +206,10 @@ onBeforeUnmount(() => {
   if (button) {
     button.removeEventListener('click', toggleSidebar);
   }
+
+  document.querySelectorAll('.sidebar .navbar-item .route-link').forEach(item => {
+    item.removeEventListener('click', toggleSidebar);
+  });
 });
 
 </script>
