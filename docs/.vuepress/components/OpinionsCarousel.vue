@@ -2,16 +2,19 @@
     <div style="width: 100%; display:block; margin:0 auto;" class="carousel-holder">
 
 
-        <Carousel :itemsToShow="3.06" :itemsToScroll="1" :autoplay="3000" :transition="700" :wrapAround="true"
+        <Carousel :itemsToShow="1" :breakpoints="breakpoints" :itemsToScroll="1" :autoplay="300000" :transition="700" :wrapAround="true"
 
             :mouseDrag="true" :pauseAutoplayOnHover="true">
 
             <Slide v-for="testimonial in testimonials" :key="testimonial.path" class="course-cell"
                 :class=testimonial.category>
                 <div class="cell-box">
+                    <v-icon class="quote quote-top" icon="mdi-format-quote-open"></v-icon>
                     <div class="cell-header">
-                        <img src="icons/stars.svg">
+                        <!-- <img src="icons/stars.svg"> -->
+                        
                         <h4>{{ testimonial.slogan }}</h4>
+                        
                     </div>
                     <!--  <div class="cell-details">
                         <ul>
@@ -27,15 +30,19 @@
                         </ul>
                     </div> -->
                     <div class="cell-content">
-                        <p>“{{ testimonial.content }}”</p>
+                        
+                        <p>„{{ testimonial.content }}”</p>
+                        
+                        
                     </div>
                     <div class="person-box">
-                        <img src="images/head-circle.jpg">
+                        <img src="images/user.png" alt="https://www.flaticon.com/free-icons/user User icons created by Freepik - Flaticon">
                         <div class="person-holder">
                             <h3>{{ testimonial.author }}</h3>
                             <p>Uczestnik {{ testimonial.category }}</p>
                         </div>
                     </div>
+                    <v-icon class="quote quote-bottom" icon="mdi-format-quote-close"></v-icon>
                 </div>
             </Slide>
             <template #addons>
@@ -52,6 +59,19 @@ import { useSiteData } from '@vuepress/client';
 
 // Reaktywna referencja do przechowywania opinii
 const testimonials = ref([]);
+
+const breakpoints = ref({
+  // 700px and up
+  800: {
+    itemsToShow: 2,
+    snapAlign: 'start',
+  },
+  // 1024 and up
+  1350: {
+    itemsToShow: 3,
+    snapAlign: 'center',
+  },
+})
 
 
 // Użyj Composition API do załadowania opinii
@@ -75,6 +95,9 @@ const loadTestimonials = async () => {
 onMounted(() => {
     loadTestimonials();
 });
+
+
+
 </script>
 
 <style></style>
