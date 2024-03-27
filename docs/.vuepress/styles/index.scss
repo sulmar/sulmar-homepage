@@ -15,12 +15,15 @@
 * {
 	font-family: "Exo 2", sans-serif;
 }
+
 h1,
 h2 {
 	color: $primaryColor;
 }
+
 .index-course {
 	max-width: 1100px !important;
+
 	h1 {
 		text-align: center;
 	}
@@ -28,7 +31,7 @@ h2 {
 
 .theme-default-content {
 	margin: 0 auto;
-    padding: 2rem 2.5rem;
+	padding: 2rem 2.5rem;
 }
 
 /* 
@@ -36,10 +39,81 @@ h2 {
 	--search-bg-color: white;
 } */
 
-.course-layout.blazor {
 
-	.learning-outcomes {
-		background-color: #3568c010;
-		/* background: linear-gradient(to top, #1e3b7200 0%, #2a529848 100%); */
+
+
+.course-layout {
+
+	&.blazor {
+		.hero-course {
+			background: $blazorBg;
+			;
+		}
+		.learning-outcomes {
+			background-color: $blazorOpacity;
+			//I want to add opacity to this color here
+		}
 	}
+
+	&.reporting {
+		.hero-course {
+			background: $reportingBg;
+		}
+		.learning-outcomes {
+			background-color: $reportingOpacity;
+			//I want to add opacity to this color here
+		}
+	}
+
+	&.dotnet {
+		.hero-course {
+			background: $dotnetBg;
+		}
+		.learning-outcomes {
+			background-color: $dotnetOpacity;
+			//I want to add opacity to this color here
+		}
+	}
+	&.maui {
+		.hero-course {
+			background: $mauiBg;
+		}
+		.learning-outcomes {
+			background-color: $mauiOpacity;
+			//I want to add opacity to this color here
+		}
+	}
+	&.redis {
+		.hero-course {
+			background: $redisBg;
+		}
+		.learning-outcomes {
+			background-color: $redisOpacity;
+			//I want to add opacity to this color here
+		}
+	}
+
+
+
+}
+
+/* Course list */
+.course-card.blazor {
+	background-color: $blazorColor;
+}
+
+.course-card.reporting {
+	background-color: $reportingColor;
+}
+
+.course-card.dotnet {
+	background-color: $dotnetColor;
+}
+
+.course-card.maui {
+	background-color: $mauiColor;
+}
+
+.course-card.redis {
+	background-color: $redisColor;
 }
