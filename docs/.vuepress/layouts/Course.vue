@@ -205,6 +205,11 @@
                 </v-container>
             </section>
 
+            
+
+                <OpinionsCarousel :currentCourse="frontmatter.title"/>
+            
+
             <section class="suggested-courses">
                 <SimmilarCoursesList :currentPage="$page" />
             </section>
@@ -230,11 +235,6 @@ const outcomes_secondHalf = computed(() => frontmatter.value.outcomes.slice(3, 6
     console.log(frontmatter.value.outcomes);
 }); */
 
-const isSidebarOpen = ref(false);
-
-const toggleSidebar = () => {
-    isSidebarOpen.value = !isSidebarOpen.value;
-};
 
 
 onMounted(() => {

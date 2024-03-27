@@ -94,17 +94,7 @@
 
             </section>
 
-            <section class="testimonials">
-
-                <v-container class="container">
-                    <header>
-                        <p class="sm-title">Rekomendacje</p>
-                        <h2>Zobacz opinie uczestników</h2>
-                    </header>
-                </v-container>
-
-                <OpinionsCarousel />
-            </section>
+            <OpinionsCarousel />
 
             <section id="contact" class="cta-section">
 
