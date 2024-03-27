@@ -1,6 +1,7 @@
 ---
 layout: Course
 title: Entity Framework Core 8.0
+weight: 10
 tagline: Ujarzmij dostęp do bazy danych. Wygodnie i wydajnie.
 slug: ef-core-8
 image: images/course-tiles/netcore.jpg

@@ -1,6 +1,7 @@
 ---
 layout: Course
 title: Wzorce Projektowe w C#
+weight: 10
 tagline: Poznaj przepisy na dobry kod. Wzor(c)owo.
 slug: design-patterns
 image: images/course-tiles/csharp.jpg

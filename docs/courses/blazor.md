@@ -1,6 +1,7 @@
 ---
 layout: Course
 title: Tworzenie aplikacji w Blazor 8.0
+weight: 20
 tagline: Poznaj nową technologię webową. Szybko i skutecznie.
 slug: blazor
 image: images/course-tiles/blazor.jpg
@@ -20,6 +21,7 @@ outcomes:
  - Use VSCode shortcuts to increase your productivity
  - Deploy your React apps
  - Write clean code like a pro
+
 ---
 
 

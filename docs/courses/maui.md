@@ -1,6 +1,7 @@
 ---
 layout: Course
 title: Tworzenie aplikacji mobilnych MAUI
+weight: 15
 slug: maui
 image: images/course-tiles/dotnet.jpg
 author: Marcin Sulecki
