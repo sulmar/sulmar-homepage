@@ -1,6 +1,7 @@
 ---
 layout: Course
 title: Uczenie maszynowe z ML.NET
+weight: 30
 slug: mlnet
 image: images/course-tiles/mlnet.jpg
 author: Marcin Sulecki

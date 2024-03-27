@@ -52,7 +52,6 @@ async function loadCourses() {
   const pages = siteData.value.frontmatterData;
   courses.value = pages
     .filter(page => page.path.startsWith('/courses/') && page.path !== folderPath)
-    //.slice(0, 6)
     .map(page => ({
       path: page.path,
       title: page.frontmatter.title,
@@ -60,7 +59,9 @@ async function loadCourses() {
       category: page.frontmatter.category,
       image: page.frontmatter.image,
       duration: page.frontmatter.duration,
-    }));
+      weight: page.frontmatter.weight 
+    }))
+    .sort((a, b) => a.weight - b.weight); 
 }
 
 onMounted(() => {
