@@ -11,9 +11,9 @@ $accentColor: #00a3e0;
 Paleta kolorów dla kategorii
 */
 
-$blazorColor: #27496D;
-$blazorBg: linear-gradient(to top, #1B344E, #27496D);
-$blazorOpacity: rgba(39, 73, 109, 0.04);
+$blazorColor: #5D3B8B;
+$blazorBg: linear-gradient(to top, #483D67, #5D3A9B);
+$blazorOpacity: rgba(94, 59, 139, 0.04);
 
 $reportingColor: #2E8B57;
 $reportingBg: linear-gradient(to top, #245D48, #2E8B57);
@@ -32,6 +32,10 @@ $redisBg: linear-gradient(to top, #811F24, #A2272D);
 $redisOpacity: rgba(162, 39, 45, 0.04);
 
 /* Szary kolor w tej samej palecie: #5A6978  linear-gradient(to top, #3E4A59, #5A6978);*/
+/* Ciemno niebieski w tej samej palecie: 
+$blazorColor: #27496D;
+$blazorBg: linear-gradient(to top, #1B344E, #27496D);
+$blazorOpacity: rgba(39, 73, 109, 0.04); */
 
 
 /* wersja 2 - żywo jaskrawa */
