@@ -5,7 +5,7 @@
 	
   } */
 
-  .carousel {
+/*   .carousel {
 	margin: 0 -5px;
 	
 	button {
@@ -13,7 +13,7 @@
 		border-radius: 9999px;
 		color: $secondaryColor;
 	}
-  }
+  } */
 
 
 
@@ -30,17 +30,48 @@
 	transition: transform 0.2s, -webkit-transform 0.2s;
 
 	.cell-box {
-		padding: 2.75rem;
+		padding: 6rem 2.5rem;
+		//padding-bottom: 2rem;
 		border: 1px solid #e5e5e5;
 		border-radius: 8px;
 		box-shadow: 0 0 1px 0px #000;
 		height: 100%;
 		text-align: left;
+		position: relative;
+		display: flex;
+
+
+	flex-direction: column;
+	justify-content: center;
 
 
 		&:hover {
 			border-color: #5591c5;
 			cursor: pointer;
+		}
+
+		.quote {
+			//color: orange;
+			font-size: 4rem;
+			color: $accentColor;
+			opacity: 0.6;
+
+		}
+
+		.quote-top {
+			display:block;
+			position: absolute;
+			top: 1rem;
+			left: 1.5rem;
+		}
+
+		.quote-bottom {
+			display:block;
+			//margin-right: 0;
+			//margin-left: auto;
+			position: absolute;
+			bottom: 1rem;
+			right: 1.5rem;
 		}
 
 		.cell-header {
@@ -51,10 +82,11 @@
 			margin-bottom: 20px;
 
 			h4 {
-				font-size: 1.5rem;
+				font-size: 1.3rem;
 				line-height: 1.2;
 				font-weight: 600;
 				margin: 0;
+				//color: $accentColor;
 			}
 
 			img {
@@ -129,10 +161,12 @@
 			}
 
 			.person-holder {
+				text-align: left;
+
 				h3 {
 					font-size: 1rem;
 					font-weight: 600;
-					color: #5591c5;
+					color: $accentColor;
 					text-transform: uppercase;
 					line-height: 1.2;
 					font-family: "Barlow Semi Condensed", sans-serif !important;
