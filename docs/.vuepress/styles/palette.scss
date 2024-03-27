@@ -6,3 +6,86 @@ $primaryColor: #111;
 $secondaryColor: #f5f5f7;
 
 $accentColor: #00a3e0;
+
+/* 
+Paleta kolorów dla kategorii
+*/
+
+$blazorColor: #27496D;
+$blazorBg: linear-gradient(to top, #1B344E, #27496D);
+$blazorOpacity: rgba(39, 73, 109, 0.04);
+
+$reportingColor: #2E8B57;
+$reportingBg: linear-gradient(to top, #245D48, #2E8B57);
+$reportingOpacity: rgba(46, 139, 86, 0.04);
+
+$dotnetColor: #3A7CA5;
+$dotnetBg: linear-gradient(to top, #2D5F73, #3A7CA5);
+$dotnetOpacity: rgba(58, 124, 165, 0.04);
+
+$mauiColor: #5D3B8B;
+$mauiBg: linear-gradient(to top, #483D67, #5D3A9B);
+$mauiOpacity: rgba(94, 59, 139, 0.04);
+
+$redisColor: #A2272D;
+$redisBg: linear-gradient(to top, #811F24, #A2272D);
+$redisOpacity: rgba(162, 39, 45, 0.04);
+
+/* Szary kolor w tej samej palecie: #5A6978  linear-gradient(to top, #3E4A59, #5A6978);*/
+
+
+/* wersja 2 - żywo jaskrawa */
+
+/* $blazorColor: #1E88E5; // Żywy Niebieski
+$blazorBg: linear-gradient(to top, #1565C0, #1E88E5);
+
+$reportingColor: #43A047; // Żywa Zieleń
+$reportingBg: linear-gradient(to top, #388E3C, #43A047);
+
+$dotnetColor: #1E88E5; // Żywy Niebieski
+$dotnetBg: linear-gradient(to top, #1565C0, #1E88E5);
+
+$mauiColor: #8E24AA; // Jaskrawy Fioletowy
+$mauiBg: linear-gradient(to top, #6A1B9A, #8E24AA);
+
+$redisColor: #E53935; // Jaskrawy Czerwony
+$redisBg: linear-gradient(to top, #C62828, #E53935); */
+
+/* wersja 3 - żywsza */
+
+/* $blazorColor: #5A9CD8 ;
+$blazorBg: linear-gradient(to top, #337AB7, #5A9CD8);
+
+$reportingColor: #60C78C ;
+$reportingBg: linear-gradient(to top, #3CB371, #60C78C);
+
+$dotnetColor: #7AB6D9;
+$dotnetBg: linear-gradient(to top, #559ECC, #7AB6D9);
+
+$mauiColor: #A692D8 ;
+$mauiBg: linear-gradient(to top, #8E6FCC, #A692D8);
+
+$redisColor: #EF9A9A ;
+$redisBg: linear-gradient(to top, #E57373, #EF9A9A); */
+
+
+/* WERSJA 4 */
+
+/* $blazorColor: #2979FF; // Umiarkowanie Żywy Niebieski
+$blazorBg: linear-gradient(to top, #1565C0, #2979FF);
+
+$reportingColor: #4CAF50; // Umiarkowana Zieleń
+$reportingBg: linear-gradient(to top, #388E3C, #4CAF50);
+
+$dotnetColor: #2979FF; // Umiarkowanie Żywy Niebieski
+$dotnetBg: linear-gradient(to top, #1565C0, #2979FF);
+
+$mauiColor: #9C27B0; // Umiarkowanie Jaskrawy Fioletowy
+$mauiBg: linear-gradient(to top, #7B1FA2, #9C27B0);
+
+$redisColor: #D32F2F; // Umiarkowanie Jaskrawy Czerwony
+$redisBg: linear-gradient(to top, #B71C1C, #D32F2F); */
+
+
+
+
